@@ -2,12 +2,12 @@
 <html>
   <head>
     <title>Signature Homes - Magnolia Grove Selection</title>
-	<link rel="stylesheet" type="text/css" href="css/foundation.css">
-	<link rel="stylesheet" type="text/css" href="css/selection_guide.css">
-	<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/foundation.css">
+    <link rel="stylesheet" type="text/css" href="css/selection_guide.css">
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
     <script src="http://code.jquery.com/ui/1.11.3/jquery-ui.js"></script>
-	<script src="js/selection_guide.js"></script>
-	<script>
+    <script src="js/selection_guide.js"></script>
+    <script>
       $(function() {
         $( "#accordion" ).accordion({
           heightStyle: "content",
@@ -21,2075 +21,791 @@
     </script>
   </head>
   <body>
-
-  <div class="wrapper">
-
-    <div="header">
-	  <div id="logo">
-        <img src="images/signature_logo_whiteBG.jpg" />
-	  </div>
-	  <div id="internal_title">
-	    Magnolia Grove Design Selections
-	  </div>
-    </div>
-
-    <!-- Begin Selection Guide -->
-
-    <form action="/send_specs", method="post">
-      <div id="input_area">
-        <div id="label">Customer Name:</div>
-	    <div id="text_input">
-          <input type="text" size="40" name="customer_name">
-	    </div>
-	  <div id="clear"></div>
-	    <div id="label">Project:</div>
-	    <div id="text_only">
-          1630 - The Grove
-	    </div>
-	    <div id="clear"></div>
-	    <div id="label">Lot:</div>
-	    <div id="text_input">
-	      <input type="text" size="30" name="lot">
-	    </div>
-	    <div id="clear"></div>
-	   <div id="label">Model:</div>
-	    <div id="text_input">
-	      <input type="text" size="30" name="model">
-	    </div>
-	    <div id="clear"></div>
-	    <div id="label">Elevation:</div>
-	    <div id="text_input">
-	      <input type="text" size="30" name="elevation">
-	    </div>
-	  </div>
-
-	  <hr />
-
-<div id="accordion">
-    <h1>Exterior Options</h1>
-    <div id="panel">
-      <div id="section_title">
-        Brick Options
-	  </div>
-	  <div id="section_options">
-        <select name="brick">
-	      <option value="">Select Option</option>
-	      <option value="ADENBLEND-Aden_Blend">Aden Blend - Each - $0.00</option>
-	      <option value="BLACKSBURG-Blacksburg">Blacksburg - Each - $0.00</option>
-	      <option value="BROMPTON-Brompton">Brompton - Each - $0.00</options>
-	      <option value="BROOKSTONE-Brookstone">Brookstone - Each - $0.00</option>
-	      <option value="BROWNSFERRY-Brownsferry">Brownsferry - Each - $0.00</option>
-	      <option value="CYPRESSPOINT-Cypress_Point">Cypress Point - Each - $0.00</option>
-	      <option value="INVERNESS-Inverness">Inverness - Each - $0.00</option>
-	      <option value="MOUNTAINBRK-Mountain_Brook">Mountain Brook - Each - $0.00</option>
-	      <option value="PAINTBRICK-Painted_(See_paint_plan_for_color)">Painted (See paint plan for color) - Each - $0.00</option>
-	      <option value="PAINTBRICKBA-Painted_for_basements_(See_paint_plan_for_color)">Painted for basements (See paint plan for color) - Each - $0.00</option>
-	      <option value="PAINTBRICK2-Painted_with_Exposed_Headers_(See_paint_plan_for_color)">Painted with Exposed Headers (See paint plan for color) - Each - $0.00</option>
-	      <option value="PAINTBRICKB2-Painted_with_Exposed_Headers_for_Basements_(See_paint_plan_for_color)">Painted with Exposed Headers for Basements (See paint plan for color) - Each - $0.00</option>
-	      <option value="SANJOSE-San_Jose">San Jose - Each - $0.00</option>
-	      <option value="SOUTHWICK-Southwick">Southwick - Each - $0.00</option>
-	      <option value="STCHARLES-St._Charles">St. Charles - Each - $0.00</option>
-	      <option value="WEATHERWOOD-Weatherwood">Weatherwood - Each - $0.00</option>
-	    </select>
-		<input type="hidden" name="brick_uom" value="Each">
-	  </div>
-
-      <div id="clear"></div>
-
-      <div id="section_title">
-	    Stone Options
-	  </div>
-	  <div id="section_options">
-	    <select name="stone">
-	  	  <option value="">Select Option</option>
-	      <option value="STONEASHBR-Ashlar_Brown">Ashlar Brown - Each - $0.00</option>
-		  <option value="STONECUTMOSS-Cut_Moss/Fieldstone">Cut Moss/Fieldstone - Each - $0.00</option>
-		  <option value="STONECOBBLEG-Tumbled_Cobblestone">Tumbled Cobblestone - Each - $0.00</option>
-	    </select>
-		<input type="hidden" name="stone_uom" value="Each">
-	  </div>
-
-	  <div id="clear"></div>
-
-      <div id="section_title">
-	    Mortar Options
-	  </div>
-	  <div id="section_options">
-	    <select name="mortar">
-	  	  <option value="">Select Option</option>
-	      <option value="LIGHTBUFF-Light_Buff">Light Buff - Each - $0.00</option>
-		  <option value="LIGHTGRAY-Light_Gray">Light Gray - Each - $0.00</option>
-		  <option value="PAINTEDMORTA-Painted_(See_paint_plan_for_color)">Painted (See paint plan for color) - Each - $0.00</option>
-		  <option value="SAHARA-Sahara">Sahara - Each - $0.00</option>
-		  <option value="SIGIVORYMORT-Signature_Ivory">Signature Ivory - Each - $0.00</option>
-		  <option value="JOINTCONCAVE-Joint_Concave">Joint - Concave - Each - $0.00</option>
-		  <option value="JOINTFLUSH-Joint_Flush">Joint - Flush - Each - $0.00</option>
-		  <option value="JoINT GRAPE-Joint_Grapevine">Joint - Grapevine - Each - $0.00</option>
-	    </select>
-		<input type="hidden" name="mortar_uom" value="Each">
-	  </div>
-
-	  <div id="clear"></div>
-
-	  <div id="section_title">
-	    Window Options
-	  </div>
-	  <div id="section_options">
-	    <select name="window">
-	  	  <option value="">Select Option</option>
-	      <option value="WINDCLADBLK-Clad/Black">Clad/Black - Each - $0.00</option>
-		  <option value="WINDCLADBRZ-Clad/Bronze">Clad/Bronze - Each - $0.00</option>
-		  <option value="WINDCLADCINN-Clad/Cinnamon">Clad/Cinnamon - Each - $0.00</option>
-		  <option value="WINDCLADIVOR-Clad/Ivory">Clad/Ivory - Each - $0.00</option>
-		  <option value="WINDCLADTAN-Clad/Tan">Clad/Tan - Each - $0.00</option>
-		  <option value="WINDCLADWH-Clad/White">Clad/White - Each - $0.00</option>
-		  <option value="WINDVINYLAL-Vinyl/Almond">Vinyl/Almond - Each - $0.00</option>
-		  <option value="WINDVINYLCL-Vinyl/Clay">Vinyl/Clay - Each - $0.00</option>
-		  <option value="WINDVINYLWH-Vinyl/White">Vinyl/White - Each - $0.00</option>
-	    </select>
-		<input type="hidden" name="window_uom" value="Each">
-	  </div>
-
-	  <div id="clear"></div>
-
-	  <div id="section_title">
-	    Gutter Options
-	  </div>
-	  <div id="section_options">
-	    <select name="gutter">
-	  	  <option value="">Select Option</option>
-	      <option value="GUTTERS30WH-30_White">30 White - Each - $0.00</option>
-		  <option value="GUTTERSBLK-Black">Black - Each - $0.00</option>
-		  <option value="GUTTERSBRZ-Bronze">Bronze - Each - $0.00</option>
-		  <option value="GUTTERSCL-Clay">Clay - Each - $0.00</option>
-		  <option value="GUTTERLINEN-Linen">Linen - Each - $0.00</option>
-		  <option value="GUTTERSMUSKB-Musket_Brown">Musket Brown - Each - $0.00</option>
-		  <option value="GUTTERSTERRA-Terratone">Terratone - Each - $0.00</option>
-		  <option value="GUTTERSWICKW-Wicker_White">Wicker White - Each - $0.00</option>
-	    </select>
-		<input type="hidden" name="gutter_uom" value="Each">
-	  </div>
-
-	  <div id="clear"></div>
-
-	  <div id="section_title">
-	    Shingle Options
-	  </div>
-	  <div id="section_options">
-	    <select name="shingle">
-	  	  <option value="">Select Option</option>
-	      <option value="SHINGLESMBLK-Moire_Black">Moire Black - Each - $0.00</option>
-		  <option value="SHINGLESWEAT-Weatherwood">Weatherwood - Each - $0.00</option>
-	    </select>
-		<input type="hidden" name="shingle_uom" value="Each">
-	  </div>
-
-	  <div id="clear"></div>
-
-	  <div id="section_title">
-	    Patio and Porch Options
-	  </div>
-
-      <div id="clear"></div>
-
-	  <div id="subsection_title">
-        Concrete Finish
+    <div class="wrapper">
+      <div="header">
+        <div id="logo">
+          <img src="images/signature_logo_whiteBG.jpg" />
+        </div>
+        <div id="internal_title">
+          Magnolia Grove Design Selections
+        </div>
       </div>
-	  <div id="section_options">
-	    <select name="patio_concrete_color">
-	  	  <option value="">Select Option</option>
-	      <option value="CONCFINISH-Stained_Black_Fox">Stained Black Fox - Each - $0.00</option>
-		  <option value="CONCFINISH-Stained_Foothills">Stained Foothills - Each - $0.00</option>
-		  <option value="CONCFINISH-Stained_Porpoise">Stained Porpoise - Each - $0.00</option>
-		  <option value="CONCFINISH-Stained_Smokehouse">Stained Smokehouse - Each - $0.00</option>
-	    </select>
-		<input type="hidden" name="patio_concrete_color_uom" value="Each">
-	  </div>
 
-	  <div id="clear"></div>
+      <!-- Begin Selection Guide -->
+      <form action="/send_specs", method="post">
+        <div id="input_area">
+          <div id="label">Customer Name:</div>
+          <div id="text_input">
+            <input type="text" size="40" name="customer_name">
+          </div>
+          <div id="clear"></div>
+          <div id="label">Project:</div>
+          <div id="text_only">
+            1630 - The Grove
+          </div>
+          <div id="clear"></div>
+          <div id="label">Lot:</div>
+          <div id="text_input">
+            <input type="text" size="30" name="lot">
+          </div>
+          <div id="clear"></div>
+          <div id="label">Model:</div>
+          <div id="text_input">
+            <input type="text" size="30" name="model">
+          </div>
+          <div id="clear"></div>
+          <div id="label">Elevation:</div>
+          <div id="text_input">
+            <input type="text" size="30" name="elevation">
+          </div>
+        </div>
 
-	  <div id="note">
-	    Select finish only if brick pavers were selected at plan review:
-	  </div>
+        <hr />
 
-	  <div id="subsection_title">
-        Brick Paver Color
+        <div id="accordion">
+          <h1>Exterior Options</h1>
+          <div id="panel">
+            <div id="section_title">
+              Brick Options
+            </div>
+            <div id="section_options">
+              <select name="brick">
+                <option value="">Select Option</option>
+                <option value="ADENBLEND-Aden_Blend">Aden Blend - Each - $0.00</option>
+                <option value="BLACKSBURG-Blacksburg">Blacksburg - Each - $0.00</option>
+                <option value="BROMPTON-Brompton">Brompton - Each - $0.00</options>
+                <option value="BROOKSTONE-Brookstone">Brookstone - Each - $0.00</option>
+                <option value="BROWNSFERRY-Brownsferry">Brownsferry - Each - $0.00</option>
+                <option value="CYPRESSPOINT-Cypress_Point">Cypress Point - Each - $0.00</option>
+                <option value="INVERNESS-Inverness">Inverness - Each - $0.00</option>
+                <option value="MOUNTAINBRK-Mountain_Brook">Mountain Brook - Each - $0.00</option>
+                <option value="PAINTBRICK-Painted_(See_paint_plan_for_color)">Painted (See paint plan for color) - Each - $0.00</option>
+                <option value="PAINTBRICKBA-Painted_for_basements_(See_paint_plan_for_color)">Painted for basements (See paint plan for color) - Each - $0.00</option>
+                <option value="PAINTBRICK2-Painted_with_Exposed_Headers_(See_paint_plan_for_color)">Painted with Exposed Headers (See paint plan for color) - Each - $0.00</option>
+                <option value="PAINTBRICKB2-Painted_with_Exposed_Headers_for_Basements_(See_paint_plan_for_color)">Painted with Exposed Headers for Basements (See paint plan for color) - Each - $0.00</option>
+                <option value="SANJOSE-San_Jose">San Jose - Each - $0.00</option>
+                <option value="SOUTHWICK-Southwick">Southwick - Each - $0.00</option>
+                <option value="STCHARLES-St._Charles">St. Charles - Each - $0.00</option>
+                <option value="WEATHERWOOD-Weatherwood">Weatherwood - Each - $0.00</option>
+              </select>
+              <input type="hidden" name="brick_uom" value="Each">
+            </div>
+
+            <div id="clear"></div>
+
+            <div id="section_title">
+              Stone Options
+            </div>
+            <div id="section_options">
+              <select name="stone">
+                <option value="">Select Option</option>
+                <option value="STONEASHBR-Ashlar_Brown">Ashlar Brown - Each - $0.00</option>
+                <option value="STONECUTMOSS-Cut_Moss/Fieldstone">Cut Moss/Fieldstone - Each - $0.00</option>
+                <option value="STONECOBBLEG-Tumbled_Cobblestone">Tumbled Cobblestone - Each - $0.00</option>
+              </select>
+              <input type="hidden" name="stone_uom" value="Each">
+            </div>
+
+            <div id="clear"></div>
+
+            <div id="section_title">
+              Mortar Options
+            </div>
+            <div id="section_options">
+              <select name="mortar">
+                <option value="">Select Option</option>
+                <option value="LIGHTBUFF-Light_Buff">Light Buff - Each - $0.00</option>
+                <option value="LIGHTGRAY-Light_Gray">Light Gray - Each - $0.00</option>
+                <option value="PAINTEDMORTA-Painted_(See_paint_plan_for_color)">Painted (See paint plan for color) - Each - $0.00</option>
+                <option value="SAHARA-Sahara">Sahara - Each - $0.00</option>
+                <option value="SIGIVORYMORT-Signature_Ivory">Signature Ivory - Each - $0.00</option>
+                <option value="JOINTCONCAVE-Joint_Concave">Joint - Concave - Each - $0.00</option>
+                <option value="JOINTFLUSH-Joint_Flush">Joint - Flush - Each - $0.00</option>
+                <option value="JoINT GRAPE-Joint_Grapevine">Joint - Grapevine - Each - $0.00</option>
+              </select>
+              <input type="hidden" name="mortar_uom" value="Each">
+            </div>
+
+            <div id="clear"></div>
+
+            <div id="section_title">
+              Window Options
+            </div>
+            <div id="section_options">
+              <select name="window">
+                <option value="">Select Option</option>
+                <option value="WINDCLADBLK-Clad/Black">Clad/Black - Each - $0.00</option>
+                <option value="WINDCLADBRZ-Clad/Bronze">Clad/Bronze - Each - $0.00</option>
+                <option value="WINDCLADCINN-Clad/Cinnamon">Clad/Cinnamon - Each - $0.00</option>
+                <option value="WINDCLADIVOR-Clad/Ivory">Clad/Ivory - Each - $0.00</option>
+                <option value="WINDCLADTAN-Clad/Tan">Clad/Tan - Each - $0.00</option>
+                <option value="WINDCLADWH-Clad/White">Clad/White - Each - $0.00</option>
+                <option value="WINDVINYLAL-Vinyl/Almond">Vinyl/Almond - Each - $0.00</option>
+                <option value="WINDVINYLCL-Vinyl/Clay">Vinyl/Clay - Each - $0.00</option>
+                <option value="WINDVINYLWH-Vinyl/White">Vinyl/White - Each - $0.00</option>
+              </select>
+              <input type="hidden" name="window_uom" value="Each">
+            </div>
+
+            <div id="clear"></div>
+
+            <div id="section_title">
+              Gutter Options
+            </div>
+            <div id="section_options">
+              <select name="gutter">
+                <option value="">Select Option</option>
+                <option value="GUTTERS30WH-30_White">30 White - Each - $0.00</option>
+                <option value="GUTTERSBLK-Black">Black - Each - $0.00</option>
+                <option value="GUTTERSBRZ-Bronze">Bronze - Each - $0.00</option>
+                <option value="GUTTERSCL-Clay">Clay - Each - $0.00</option>
+                <option value="GUTTERLINEN-Linen">Linen - Each - $0.00</option>
+                <option value="GUTTERSMUSKB-Musket_Brown">Musket Brown - Each - $0.00</option>
+                <option value="GUTTERSTERRA-Terratone">Terratone - Each - $0.00</option>
+                <option value="GUTTERSWICKW-Wicker_White">Wicker White - Each - $0.00</option>
+              </select>
+              <input type="hidden" name="gutter_uom" value="Each">
+            </div>
+
+            <div id="clear"></div>
+
+            <div id="section_title">
+              Shingle Options
+            </div>
+            <div id="section_options">
+              <select name="shingle">
+                <option value="">Select Option</option>
+                <option value="SHINGLESMBLK-Moire_Black">Moire Black - Each - $0.00</option>
+                <option value="SHINGLESWEAT-Weatherwood">Weatherwood - Each - $0.00</option>
+              </select>
+              <input type="hidden" name="shingle_uom" value="Each">
+            </div>
+
+            <div id="clear"></div>
+
+            <div id="section_title">
+              Patio and Porch Options
+            </div>
+
+            <div id="clear"></div>
+
+            <div id="subsection_title">
+              Concrete Finish
+            </div>
+            <div id="section_options">
+              <select name="patio_concrete_color">
+                <option value="">Select Option</option>
+                <option value="CONCFINISH-Stained_Black_Fox">Stained Black Fox - Each - $0.00</option>
+                <option value="CONCFINISH-Stained_Foothills">Stained Foothills - Each - $0.00</option>
+                <option value="CONCFINISH-Stained_Porpoise">Stained Porpoise - Each - $0.00</option>
+                <option value="CONCFINISH-Stained_Smokehouse">Stained Smokehouse - Each - $0.00</option>
+              </select>
+              <input type="hidden" name="patio_concrete_color_uom" value="Each">
+            </div>
+
+            <div id="clear"></div>
+
+            <div id="note">
+              Select finish only if brick pavers were selected at plan review:
+            </div>
+
+            <div id="subsection_title">
+              Brick Paver Color
+            </div>
+            <div id="section_options">
+              <select name="brick_paver_color">
+                <option value="">Select Option</option>
+                <option value="BRICKPAVERFI-Academy_Gray_Basketweave">Academy Gray - Basketweave - Each - $0.00</option>
+                <option value="BRICKPAVERFI-Academy_Gray_Herringbone">Academy Gray - Herringbone - Each - $0.00</option>
+                <option value="BRICKPAVERFI-Gunstock_Basketweave">Gunstock - Basketweave - Each - $0.00</option>
+                <option value="BRICKPAVERFI-Gunstock_Herringbone">Gunstock - Herringbone - Each - $0.00</option>
+                <option value="BRICKPAVERFI-Magnum_Flush_Basketweave">Magnum Flush - Basketweave - Each - $0.00</option>
+                <option value="BRICKPAVERFI-Magnum_Flush_Herringbone">Magnum Flush - Herringbone - Each - $0.00</option>
+              </select>
+              <input type="hidden" name="brick_paver_color_uom" value="Each">
+            </div>
+
+            <div id="clear"></div>
+
+            <div id="subsection_title">
+              Brick Paver Mortar
+            </div>
+            <div id="section_options">
+              <select name="brick_paver_mortar">
+                <option value="">Select Option</option>
+                <option value="BRICKPAVERFI-Buff">Buff - Each - $0.00</option>
+                <option value="BRICKPAVERFI-Dark_Gray">Dark Gray - Each - $0.00</option>
+                <option value="BRICKPAVERFI-Frosty">Frosty - Each - $0.00</option>
+                <option value="BRICKPAVERFI-Khaki">Khaki - Each - $0.00</option>
+                <option value="BRICKPAVERFI-Light_Buff">Light Buff - Each - $0.00</option>
+                <option value="BRICKPAVERFI-Light_Gray">Light Gray - Each - $0.00</option>
+                <option value="BRICKPAVERFI-Premium_Gray">Premium Gray - Each - $0.00</option>
+                <option value="BRICKPAVERFI-Sahara">Sahara - Each - $0.00</option>
+                <option value="BRICKPAVERFI-Signature_Ivory">Signature Ivory - Each - $0.00</option>
+              </select>
+              <input type="hidden" name="brick_paver_mortar_uom" value="Each">
+            </div>
+
+            <div id="clear"></div>
+          </div>
+
+          <h1>Kitchen Options</h1>
+          <div id="panel">
+            <div id="kitchen_island_cabinets"></div>
+            <div id="clear"></div>
+            <div id="kitchen_island_cabinet_options"></div>
+            <div id="clear"></div>
+
+            <div id="kitchen_perimeter_cabinets"></div>
+            <div id="clear"></div>
+            <div id="kitchen_perimeter_cabinet_options"></div>
+            <div id="clear"></div>
+
+            <div id="kitchen_island_countertops"></div>
+            <div id="clear"></div>
+            <div id="kitchen_island_countertop_options"></div>
+            <div id="clear"></div>
+
+            <div id="kitchen_perimeter_countertops"></div>
+            <div id="clear"></div>
+            <div id="kitchen_perimeter_countertop_options"></div>
+            <div id="clear"></div>
+
+            <div id="kitchen_backsplash"></div>
+            <div id="clear"></div>
+            <div id="kitchen_backsplash_options"></div>
+            <div id="clear"></div>
+
+            <div id="kitchen_sink"></div>
+            <div id="clear"></div>
+            <div id="kitchen_sink_options"></div>
+            <div id="clear"></div>
+
+          <div id="section_title">
+            Plumbing Options
+          </div>
+
+          <div id="clear"></div>
+
+          <div id="subsection_title">
+            Kitchen Faucet
+          </div>
+          <div id="section_options">
+            <select name="kitchen_faucet">
+              <option value="">Select Option</option>
+              <option value="KOH560CP">Kohler Bellera with Pull Down Spout in Polished Chrome - Each - $0.00</option>
+              <option value="KOH560VS">Kohler Bellera with Pull Down Spout in Vibrant Stainless - Each - $70.00</option>
+              <option value="KOH560BZ">Kohler Bellera with Pull Down Spout in Oil Rubbed Bronze - Each - $80.00</option>
+              <option value="KOH596CP">Kohler Simplice 1 Hole with Pull Down Spout in Polished Chrome - Each - $30.00</option>
+              <option value="KOH596VS">Kohler Simplice 1 Hole with Pull Down Spout in Vibrant Stainless - Each - $100.00</option>
+              <option value="DAN455158">Danze Parma in Chrome - Each - $220.00</option>
+              <option value="DAN455158SS">Danze Parma in Stainless Steel - Each - $400.00</option>
+              <option value="KOH72218CP">Kohler Sensate Touchless with Pull Down Spout in Polished Chrome - Each - $450.00</option>
+              <option value="KOH72218VS">Kohler Sensate Touchless with Pull Down Spout in Vibrant Stainless - Each - $590.00</option>
+              <option value="KOH61313CP">Kohler Parq Bridge Style in Polished Chrome - Each - $750.00</option>
+              <option value="KOH61313VS">Kohler Parq Bridge Style in Vibrant Stainless - Each - $1120.00</option>
+              <option value="KOH61313BZ">Kohler Parq Bridge Style in Oil Rubbed Bronze - Each - $1120.00</option>
+            </select>
+            <input type="hidden" name="kitchen_faucet_uom" value="Each">
+          </div>
+
+          <div id="clear"></div>
+
+          <div id="subsection_title">
+            Soap Dispenser
+          </div>
+          <div id="section_options">
+            <select name="soap_dispenser">
+              <option value="">Select Option</option>
+              <option value="KOHSOAPCP">Kohler Chrome - Each - $90.00</option>
+              <option value="KOHSOAPVS">Kohler Vibrant Stainless - Each - $90.00</option>
+              <option value="KOHSOAPBZ">Kohler Oil Rubbed Bronze - Each - $90.00</option>
+            </select>
+            <input type="hidden" name="soap_dispenser_uom" value="Each">
+          </div>
+
+          <div id="clear"></div>
+        </div>
+
+        <h1>Master Bath Options</h1>
+        <div id="panel">
+          <div id="master_bath_cabinets"></div>
+          <div id="clear"></div>
+          <div id="master_bath_cabinet_options"></div>
+          <div id="clear"></div>
+
+          <div id="master_bath_tub_skirt"></div>
+          <div id="clear"></div>
+          <div id="master_bath_tub_skirt_options"></div>
+          <div id="clear"></div>
+
+          <div id="note">
+            Only Select finish if SPA bath option was selected at contract.
+          </div>
+          <div id="clear"></div>
+
+          <div id="master_bath_spa"></div>
+          <div id="clear"></div>
+          <div id="master_bath_spa_options"></div>
+          <div id="clear"></div>
+
+          <div id="master_bath_tub_deck"></div>
+          <div id="clear"></div>
+          <div id="master_bath_tub_deck_options"></div>
+          <div id="clear"></div>
+
+          <div id="master_bath_vanity_countertops"></div>
+          <div id="clear"></div>
+          <div id="master_bath_vanity_countertop_options"></div>
+          <div id="clear"></div>
+
+          <div id="section_title">
+            Master Sink
+          </div>
+          <div id="section_options">
+            <select name="master_sink">
+              <option value="">Select Option</option>
+              <option value="UNDERMOUNTMA-Undermount-Porcelain_(both_bowls)">Undermount Porcelain (both bowls) - Pair - $0.00</option>
+              <option value="SINKMEMCLMB-Kohler_Memoir_Classic_Drop_in_(both_bowls)">Kohler Memoir Classic Drop-in (both_bowls) - Pair - $530.00</option>
+              <option value="SINKDEMIMB-Kohler_DemiLav_Drop_in_(both_bowls)">Kohler DemiLav Drop-in (both bowls) - Pair - $1040.00</option>
+            </select>
+          </div>
+
+          <div id="clear"></div>
+
+          <div id="section_title">
+            Faucets & Hardware
+          </div>
+          <div id="section_options">
+            <select name="master_faucets">
+              <option value="">Select Option</option>
+              <option value="KOHDEVCPMB-Kohler_Devonshire_Chrome">Kohler Devonshire Chrome - Each - $0.00</option>
+              <option value="KOHDEVBNMB-Kohler_Devonshire_Brushed_Nickel">Kohler Devonshire Brushed Nickel - Each - $450.00</option>
+              <option value="KOHDEVBZMB-Kohler_Devonshire_Oil_Rubbed_Bronze">Kohler Devonshire Oil Rubbed Bronze - Each - $550.00</option>
+              <option value="KOHALTCPMB-Kohler_Alteo_Chrome">Kohler Alteo Chrome - Each - $0.00</option>
+              <option value="KOHALTBNMB-Kohler_Alteo_Brushed_Nickel">Kohler Alteo Brushed Nickel - Each - $450.00</option>
+              <option value="KOHALTBZMB-Kohler_Alteo_Oil_Rubbed_Bronze">Kohler Alteo Oil Rubbed Bronze - Each - $650.00</option>
+              <option value="KOHMARCPMB-Kohler_Margaux_Chrome">Kohler Margaux Chrome - Each - $1450.00</option>
+              <option value="KOHMARBNMB-Kohler_Margaux_Brushed_Nickel">Kohler Margaux Brushed Nickel - Each - $2450.00</option>
+            </select>
+          </div>
+
+          <div id="clear"></div>
+
+          <div id="section_title">
+            Spa Tub Finish
+          </div>
+          <div id="section_options">
+            <select name="spa_tub_finish">
+              <option value="">Select Option</option>
+              <option value="KOHTUBSPABN-Change_from_Chrome_to_Brushed_Nickel">Change from Chrome to Brushed Nickel - Each - $170.00</option>
+              <option value="KOHTUBSPABZ-Change_from_Chrome_to_Oil_Rubbed_Bronze">Change from Chrome to Oil Rubbed Bronze - Each - $170.00</option>
+            </select>
+          </div>
+
+          <div id="clear"></div>
+
+          <div id="section_title">
+            Spa Shower Finish
+          </div>
+          <div id="section_options">
+            <select name="spa_shower_finish">
+              <option value="">Select Option</option>
+              <option value="KOHSHOSPABN-Change_from_Chrome_to_Brushed_Nickel">Change from Chrome to Brushed Nickel - Each - $260.00</option>
+              <option value="KOHSHOSPABZ-Change_from_Chrome_to_Oil_Rubbed_Bronze">Change from Chrome to Oil Rubbed Bronze - Each - $260.00</option>
+            </select>
+          </div>
+
+          <div id="clear"></div>
+
+          <div id="section_title">
+            Luxury Shower Finish
+          </div>
+          <div id="section_options">
+            <select name="luxury_shower_finish">
+              <option value="">Select Option</option>
+              <option value="KOHSHOLUXBN-Change_from_Chrome_to_Brushed_Nickel">Change from Chrome to Brushed Nickel - Each - $360.00</option>
+              <option value="KOHSHOLUXBZ-Change_from_Chrome_to_Oil_Rubbed_Bronze">Change from Chrome to Oil Rubbed Bronze - Each - $360.00</option>
+            </select>
+          </div>
+
+          <div id="clear"></div>
+
+          <div id="section_title">
+            Showerhead
+          </div>
+          <div id="section_options">
+            <select name="showerhead">
+              <option value="">Select Option</option>
+              <option value="KOHMOXCPMB-Moxie_Single_Function_Showerhead_Chrome">Moxie Single-Function Showerhead in Chrome - Each - $170.00</option>
+              <option value="KOHMOXBNMB-Moxie_Single_Function_Showerhead_Brushed_Nickel">Moxie Single-Function Showerhead in Brushed Nickel - Each - $390.00</option>
+              <option value="KOHMOXBZMB-Moxie_Single_Function_Showerhead_Oil_Rubbed_Bronze">Moxie Single-Function Showerhead in Oil Rubbed Bronze - Each - $380.00</option>
+              <option value="KOHHANDCPMB-FlipSide_Multi_Function_Handshower_Chrome">FlipSide Multi_Function Handshower in Chrome - Each - $260.00</option>
+              <option value="KOHHANDBNMB-FlipSide_Multi_Function_Handshower_Brushed_Nickel">FlipSide Multi_Function Handshower in Brushed Nickel - Each - $450.00</option>
+              <option value="KOHHANDBZMB-FlipSide_Multi_Function_Handshower_Oil_Rubbed_Bronze">FlipSide Multi_Function Handshower in Oil Rubbed Bronze - Each - $460.00</option>
+            </select>
+          </div>
+
+          <div id="clear"></div>
+
+          <div id="master_bath_mirror"></div>
+          <div id="clear"></div>
+          <div id="master_bath_mirror_options"></div>
+          <div id="clear"></div>
+
+          <div id="section_title">
+            Tiled Shower Bench
+          </div>
+          <div id="section_options">
+            <select name="tiled_shower_bench">
+              <option value="">Select Option</option>
+              <option value="TILESHBENCH-Tiled-Shower-Bench">Add a Tiled Shower Bench - Each - $375.00</option>
+            </select>
+          </div>
+
+          <div id="clear"></div>
+
+          <div id="master_shower_floor_tile"></div>
+          <div id="clear"></div>
+          <div id="master_shower_floor_tile_options"></div>
+          <div id="clear"></div>
+
+          <div id="master_shower_wall_tile"></div>
+          <div id="clear"></div>
+          <div id="master_shower_wall_tile_options"></div>
+          <div id="clear"></div>
+
+        </div>
+
+        <h1>Powder Room Options</h1>
+        <div id="panel">
+
+          <div id="section_title">
+            Vanity-Pedestal
+          </div>
+          <div id="section_options">
+            <select name="powder-pedestal">
+              <option value="">Select Option</option>
+              <option value="PLMEMPKG-Kohler_Pedestal_&_Commode_Package">Kohler Pedestal & Commode Package - Each - $450.00</option>
+            </select>
+          </div>
+
+          <div id="clear"></div>
+
+          <div id="section_title">
+            Hardware
+          </div>
+          <div id="section_options">
+            <select name="powder-pedestal">
+              <option value="">Select Option</option>
+              <option value="KOHDEVCPPD-Kohler_Devonshire_Chrome_with_Midtowne_Chrome_Bath_Hardware">Kohler_Devonshire Chrome with Midtowne Chrome Bath Hardware - Each - $0.00</option>
+              <option value="KOHDEVBNPD-Kohler_Devonshire_Brushed_Nickel_with_Midtowne_Satin_Nickel_Bath_Hardware">Kohler_Devonshire Brushed Nickel with Midtowne Satin Nickel Bath Hardware - Each - $110.00</option>
+              <option value="KOHDEVBZPD-Kohler_Devonshire_Oil_Rubbed_Bronze_with_Midtowne_Bronze_Bath_Hardware">Kohler_Devonshire Oil Rubbed Bronze with Midtowne Bronze Bath Hardware - Each - $130.00</option>
+              <option value="KOHALTCPPD-Kohler_Alteo_Chrome_with_Midtowne_Chrome_Bath_Hardware">Kohler Alteo Chrome with Midtowne Chrome Bath Hardware - Each - $0.00</option>
+              <option value="KOHALTBNPD-Kohler_Alteo_Brushed_Nickel_with_Midtowne_Satin_Nickel_Bath_Hardware">Kohler Alteo Brushed Nickel with Midtowne Satin Nickel Bath Hardware - Each - $80.00</option>
+              <option value="KOHALTBZPD-Kohler_Alteo_Oil_Rubbed_Bronze_with_Midtowne_Chrome_Bath_Hardware">Kohler Alteo Chrome with Midtowne Chrome Bath Hardware - Each - $130.00</option>
+              <option value="KOHMARCPPD-Kohler_Margaux_Chrome_with_Midtowne_Chrome_Bath_Hardware">Kohler Margaux Chrome with Midtowne Chrome Bath Hardware - Each - $510.00</option>
+              <option value="KOHMARBNPD-Kohler_Margaux_Brushed_Nickel_with_Midtowne_Satin_Nickel_Bath_Hardware">Kohler Margaux Brushed Nickel with Midtowne Satin Nickel Bath Hardware - Each - $850.00</option>
+            </select>
+          </div>
+
+          <div id="clear"></div>
+
+          <div id="powder_mirror"></div>
+          <div id="clear"></div>
+          <div id="powder_mirror_options"></div>
+          <div id="clear"></div>
+        </div>
+
+
+        <h1>Secondary Bath Options</h1>
+        <div></div>
+
+
+        <h1>Laundry Options</h1>
+        <div id="panel">
+          <div id="laundry_cabinets"></div>
+          <div id="clear"></div>
+          <div id="laundry_cabinet_options"></div>
+          <div id="clear"></div>
+
+          <div id="laundry_countertop"></div>
+          <div id="clear"></div>
+          <div id="laundry_countertop_options"></div>
+          <div id="clear"></div>
+        </div>
+
+        <h1>Flooring Options</h1>
+        <div id="panel">
+
+          <div id="section_title">
+            Hardwood
+          </div>
+          <div id="section_options">
+            <select id="dropdown" name="hardwoods" onchange="show_hardwood_options(this.value);">
+              <option value="">Select Option</option>
+              <option value="HWHEN-Mohawk_Henley">Mohawk Henley - SqFt - $0.00</option>
+              <option value="HWNOT-Shaw_Nottoway">Shaw Nottoway - SqFt - $0.00</option>
+              <option value="HWHENILOCPT-Mohawk_Henley_in_Lieu_of_Carpet">Mohawk Henley in Lieu of Carpet - SqFt - $6.00</option>
+              <option value="HWNOTILOCPT-Shaw_Nottoway_in_Lieu_of_Carpet">Shaw Nottoway in Lieu of Carpet - SqFt - $7.00</option>
+            </select>
+          </div>
+
+          <div id="clear"></div>
+
+          <div id="hardwoods-HWHEN" style="display: none;">
+            <div id="subsection_title">
+              Style/Color
+            </div>
+            <div id="section_options">
+              <input type="checkbox" name="hardwoods-HWHEN[]" value="Mohawk Henley Hickory Amber" />Mohawk Henley Hickory Amber<br />
+              <input type="checkbox" name="hardwoods-HWHEN[]" value="Mohawk Henley Hickory Charcoal" />Mohawk Henley Hickory Charcoal<br />
+              <input type="checkbox" name="hardwoods-HWHEN[]" value="Mohawk Henley Hickory Chocolate" />Mohawk Henley Hickory Chocolate<br />
+              <input type="checkbox" name="hardwoods-HWHEN[]" value="Mohawk Henley Hickory Mocha" />Mohawk Henley Hickory Mocha<br />
+              <input type="checkbox" name="hardwoods-HWHEN[]" value="Mohawk Henley Hickory Shadow" />Mohawk Henley Hickory Shadow<br />
+              <input type="checkbox" name="hardwoods-HWHEN[]" value="Mohawk Henley Hickory Teak" />Mohawk Henley Hickory Teak<br />
+            </div>
+            <div id="clear"></div>
+            <div id="subsection_title">
+              Rooms:
+            </div>
+            <div id="section_options">
+              <textarea></textarea>
+            </div>
+            <div id="clear"></div>
+            <div id="subsection_title">
+              Quantity (SqFt)
+            </div>
+            <div id="section_options">
+              <input type="textbox" size="30" name="hardwoods-HWHEN-Qty" />
+            </div>
+          </div>
+          <div id="hardwoods-HWNOT" style="display: none;">
+            <div id="subsection_title">
+              Style/Color
+            </div>
+            <div id="section_options">
+              <input type="checkbox" name="hardwoods-HWNOT[]" value="Shaw Nottoway Burnt Barnboard" />Shaw Nottoway Burnt Barnboard<br />
+              <input type="checkbox" name="hardwoods-HWNOT[]" value="Shaw Nottoway Old English" />Shaw Nottoway Old English<br />
+              <input type="checkbox" name="hardwoods-HWNOT[]" value="Shaw Nottoway Praire Dust" />Shaw Nottoway Praire Dust<br />
+              <input type="checkbox" name="hardwoods-HWNOT[]" value="Shaw Nottoway Stonehenge" />Shaw Nottoway Stonehenge<br />
+              <input type="checkbox" name="hardwoods-HWNOT[]" value="Shaw Nottoway Warm Sunset" />Shaw Nottoway Warm Sunset<br />
+              <input type="checkbox" name="hardwoods-HWNOT[]" value="Shaw Nottoway Weathered Saddle" />Shaw Nottoway Weathered Saddle<br />
+            </div>
+            <div id="clear"></div>
+            <div id="subsection_title">
+              Rooms:
+            </div>
+            <div id="section_options">
+              <textarea></textarea>
+            </div>
+            <div id="clear"></div>
+            <div id="subsection_title">
+              Quantity (SqFt)
+            </div>
+            <div id="section_options">
+              <input type="textbox" size="30" name="hardwoods-HWNOT-Qty" />
+            </div>
+          </div>
+          <div id="hardwoods-HWHENILOCPT" style="display: none;">
+            <div id="subsection_title">
+              Style/Color
+            </div>
+            <div id="section_options">
+              <input type="checkbox" name="hardwoods-HWHENILOCPT[]" value="Mohawk Henley Hickory Amber" />Mohawk Henley Hickory Amber<br />
+              <input type="checkbox" name="hardwoods-HWHENILOCPT[]" value="Mohawk Henley Hickory Charcoal" />Mohawk Henley Hickory Charcoal<br />
+              <input type="checkbox" name="hardwoods-HWHENILOCPT[]" value="Mohawk Henley Hickory Chocolate" />Mohawk Henley Hickory Chocolate<br />
+              <input type="checkbox" name="hardwoods-HWHENILOCPT[]" value="Mohawk Henley Hickory Mocha" />Mohawk Henley Hickory Mocha<br />
+              <input type="checkbox" name="hardwoods-HWHENILOCPT[]" value="Mohawk Henley Hickory Shadow" />Mohawk Henley Hickory Shadow<br />
+              <input type="checkbox" name="hardwoods-HWHENILOCPT[]" value="Mohawk Henley Hickory Teak" />Mohawk Henley Hickory Teak<br />
+            </div>
+            <div id="clear"></div>
+            <div id="subsection_title">
+              Rooms:
+            </div>
+            <div id="section_options">
+              <textarea></textarea>
+            </div>
+            <div id="clear"></div>
+            <div id="subsection_title">
+              Quantity (SqFt)
+            </div>
+            <div id="section_options">
+              <input type="textbox" size="30" name="hardwoods-HWHENILOCPT-Qty" />
+            </div>
+          </div>
+          <div id="hardwoods-HWNOTILOCPT" style="display: none;">
+            <div id="subsection_title">
+              Style/Color
+            </div>
+            <div id="section_options">
+              <input type="checkbox" name="hardwoods-HWNOTILOCPT[]" value="Shaw Nottoway Burnt Barnboard" />Shaw Nottoway Burnt Barnboard<br />
+              <input type="checkbox" name="hardwoods-HWNOTILOCPT[]" value="Shaw Nottoway Old English" />Shaw Nottoway Old English<br />
+              <input type="checkbox" name="hardwoods-HWNOTILOCPT[]" value="Shaw Nottoway Praire Dust" />Shaw Nottoway Praire Dust<br />
+              <input type="checkbox" name="hardwoods-HWNOTILOCPT[]" value="Shaw Nottoway Stonehenge" />Shaw Nottoway Stonehenge<br />
+              <input type="checkbox" name="hardwoods-HWNOTILOCPT[]" value="Shaw Nottoway Warm Sunset" />Shaw Nottoway Warm Sunset<br />
+              <input type="checkbox" name="hardwoods-HWNOTILOCPT[]" value="Shaw Nottoway Weathered Saddle" />Shaw Nottoway Weathered Saddle<br />
+            </div>
+            <div id="clear"></div>
+            <div id="subsection_title">
+              Rooms:
+            </div>
+            <div id="section_options">
+              <textarea></textarea>
+            </div>
+            <div id="clear"></div>
+            <div id="subsection_title">
+              Quantity (SqFt)
+            </div>
+            <div id="section_options">
+              <input type="textbox" size="30" name="hardwoods-HWNOTILOCPT-Qty" />
+            </div>
+          </div>
+
+          <div id="clear"></div>
+
+        </div>
+
+
+        <h1>Interior Trim and Details</h1>
+        <div></div>
+
+        <h1>Paint Options</h1>
+        <div>
+          <img src="images/paint_plan.jpg" width="400" />
+        </div>
+
+        <h1>Lighting Options</h1>
+        <div></div>
+        <h1>Electrical and Wiring Options</h1>
+        <div id="panel">
+          <div id="section_title">
+            Outlet & Switch Plate throughout Home
+          </div>
+          <div id="section_options">
+            <select name="outlet_plates">
+              <option value="">Select Option</option>
+              <option value="PLATEALL-Black">Black - Each - $0.00</option>
+              <option value="PLATEALL-Brown">Brown - Each - $0.00</option>
+              <option value="PLATEALL-Light_Almond">Light Almond - Each - $0.00</option>
+              <option value="PLATEALL-White">White - Each - $0.00</option>
+            </select>
+            <input type="hidden" name="outlet_plates_uom" value="Each" />
+            <input type="hidden" name="outlet_plates_description" value="Outlet & Switch Plate throughout Home" />
+          </div>
+
+          <div id="clear"></div>
+
+          <div id="section_title">
+            Outlet Plate on the Kitchen Island
+          </div>
+          <div id="section_options">
+            <select name="island_plates">
+              <option value="">Select Option</option>
+              <option value="PLATEISLAND-Black">Black - Each - $0.00</option>
+              <option value="PLATEISLAND-Brown">Brown - Each - $0.00</option>
+              <option value="PLATEISLAND-Light_Almond">Light Almond - Each - $0.00</option>
+              <option value="PLATEISLAND-White">White - Each - $0.00</option>
+            </select>
+            <input type="hidden" name="island_plates_uom" value="Each" />
+            <input type="hidden" name="island_plates_description" value="Outlet Plate on the Kitchen Island" />
+          </div>
+
+          <div id="clear"></div>
+
+          <div id="section_title">
+            Outlet Plates on the Backsplash
+          </div>
+          <div id="section_options">
+            <select name="backsplash_plates">
+              <option value="">Select Option</option>
+              <option value="PLATESPLASH-Black">Black - Each - $0.00</option>
+              <option value="PLATESPLASH-Brown">Brown - Each - $0.00</option>
+              <option value="PLATESPLASH-Light_Almond">Light Almond - Each - $0.00</option>
+              <option value="PLATESPLASH-White">White - Each - $0.00</option>
+            </select>
+            <input type="hidden" name="backsplash_plates_uom" value="Each" />
+            <input type="hidden" name="backsplash_plates_description" value="Outlet Plates on the Backsplash" />
+
+          </div>
+        </div>
+
+        <h1>Miscellaneous Options</h1>
+        <div id="panel">
+          <div id="section_title">
+            2.5" Plantation-Style Blinds
+          </div>
+          <div id="section_options">
+            <select id="dropdown" name="blinds25" onchange="CheckContact(this.value,'blinds25_rooms');">
+              <option value="">Select Option</option>
+              <option value="2BLINDS-Painted_Off_White">Painted Off White - Each - $95.00</option>
+              <option value="2BLINDS-Painted_White">Painted White - Each - $95.00</option>
+            </select>
+            <select id="qty" name="blinds25_qty">
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+            </select>
+            <input type="hidden" name="blinds25_price" value="95.00">
+            <input type="hidden" name="blinds25_description" value="2.5in. Plantation-Style Blinds">
+            <input type="hidden" name="blinds25_uom" value="Each">
+            <div id="blinds25_rooms" style="display: none;">Room(s): <input type="text" name="blinds25_rooms" /></div>
+          </div>
+
+
+          <div id="section_title">
+            3.5" Plantation Shutters
+          </div>
+          <div id="section_options">
+            <select id="dropdown" name="shutters" onchange="CheckContact(this.value,'shutters_rooms');">
+              <option value="">Select Option</option>
+              <option value="SHUTTERS-Stained_Black_Walnut">Stained Black Walnut - Each - $350.00</option>
+              <option value="SHUTTERS-Stained_Cherry">Stained Cherry - Each - $350.00</option>
+              <option value="SHUTTERS-Stained_Old_Teak">Stained Old Teak - Each - $350.00</option>
+            </select>
+            <select id="qty" name="shutters_qty">
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+            </select>
+            <input type="hidden" name="shutters_price" value="350.00">
+            <input type="hidden" name="shutters_description" value="3.5in. Plantation Shutters">
+            <input type="hidden" name="shutters_uom" value="Each">
+            <div id="shutters_rooms" style="display: none;">Room(s): <input type="text" name="shutters_rooms" /><br /></div>
+          </div>
+        </div>
+        <div id="clear"></div>
+
+
       </div>
-	  <div id="section_options">
-	    <select name="brick_paver_color">
-	  	  <option value="">Select Option</option>
-	      <option value="BRICKPAVERFI-Academy_Gray_Basketweave">Academy Gray - Basketweave - Each - $0.00</option>
-		  <option value="BRICKPAVERFI-Academy_Gray_Herringbone">Academy Gray - Herringbone - Each - $0.00</option>
-		  <option value="BRICKPAVERFI-Gunstock_Basketweave">Gunstock - Basketweave - Each - $0.00</option>
-		  <option value="BRICKPAVERFI-Gunstock_Herringbone">Gunstock - Herringbone - Each - $0.00</option>
-		  <option value="BRICKPAVERFI-Magnum_Flush_Basketweave">Magnum Flush - Basketweave - Each - $0.00</option>
-		  <option value="BRICKPAVERFI-Magnum_Flush_Herringbone">Magnum Flush - Herringbone - Each - $0.00</option>
-	    </select>
-		<input type="hidden" name="brick_paver_color_uom" value="Each">
-	  </div>
 
-	  <div id="clear"></div>
-
-	  <div id="subsection_title">
-        Brick Paver Mortar
-      </div>
-	  <div id="section_options">
-	    <select name="brick_paver_mortar">
-	  	  <option value="">Select Option</option>
-	      <option value="BRICKPAVERFI-Buff">Buff - Each - $0.00</option>
-		  <option value="BRICKPAVERFI-Dark_Gray">Dark Gray - Each - $0.00</option>
-		  <option value="BRICKPAVERFI-Frosty">Frosty - Each - $0.00</option>
-		  <option value="BRICKPAVERFI-Khaki">Khaki - Each - $0.00</option>
-		  <option value="BRICKPAVERFI-Light_Buff">Light Buff - Each - $0.00</option>
-		  <option value="BRICKPAVERFI-Light_Gray">Light Gray - Each - $0.00</option>
-		  <option value="BRICKPAVERFI-Premium_Gray">Premium Gray - Each - $0.00</option>
-		  <option value="BRICKPAVERFI-Sahara">Sahara - Each - $0.00</option>
-		  <option value="BRICKPAVERFI-Signature_Ivory">Signature Ivory - Each - $0.00</option>
-	    </select>
-		<input type="hidden" name="brick_paver_mortar_uom" value="Each">
-	  </div>
-
-	  <div id="clear"></div>
-	</div>
-
-	<h1>Kitchen Options</h1>
-	<div id="panel">
-	  <div id="section_title">
-        Island Cabinets
-	  </div>
-	  <div id="section_options">
-        <select name="kitchen_island_cabinets" onchange="show_cabinet_island_options(this.value);">
-	      <option value="">Select Option</option>
-	      <option value="CABBENPNTIO-Benton_Painted">Benton Painted - Each - $0.00</option>
-	      <option value="CABBENSTNIO-Benton_Stained">Benton Stained - Each - $0.00</option>
-		  <option value="CABLANPNTIO-Landen_Painted">Landen Painted - Each - $0.00</option>
-		  <option value="CABLANSTNIO-Landen_Stained">Landen Stained - Each - $0.00</option>
-		  <option value="CABSAYSTNIO-Saybrooke_Stained">Saybrooke Stained - Each - $0.00</option>
-	    </select>
-		<input type="hidden" name="kitchen_island_cabinets_uom" value="Each">
-	  </div>
-
-      <div id="clear"></div>
-
-	  <div id="cabinets-painted" style="display: none;">
-		<div id="subsection_title">
-          Color
-        </div>
-        <div id="section_options">
-          <select name="kitchen_island_cabinets_color">
-	        <option value="">Select Option</option>
-	        <option value="Antique">Antique</option>
-	        <option value="White">White</option>
-		  </select>
-		</div>
-	  </div>
-	  <div id="cabinets-stained" style="display: none;">
-		<div id="subsection_title">
-          Color
-        </div>
-        <div id="section_options">
-		  <select name="kitchen_island_cabinets_color">
-	        <option value="">Select Option</option>
-	        <option value="Cafe">Cafe</option>
-	        <option value="Saddle">Saddle</option>
-		    <option value="Sarsparilla">Sarsparilla</option>
-	        <option value="Umber">Umber</option>
-		  </select>
-	    </div>
-	  </div>
-	  <div id="cabinets-saybrooke" style="display: none;">
-		<div id="subsection_title">
-          Color
-        </div>
-        <div id="section_options">
-          <select name="kitchen_island_cabinets_color">
-	        <option value="">Select Option</option>
-	        <option value="Autumn">Autumn</option>
-	        <option value="Cafe">Cafe</option>
-		    <option value="Rouge">Rouge</option>
-	        <option value="Saddle">Saddle</option>
-		    <option value="Sarsparilla">Sarsparilla</option>
-	        <option value="Umber">Umber</option>
-		  </select>
-		</div>
-	  </div>
-
-      <div id="clear"></div>
-
-	  <div id="section_title">
-        Perimeter Cabinets
-	  </div>
-	  <div id="section_options">
-        <select name="kitchen_perimeter_cabinets" onchange="show_cabinet_perimeter_options(this.value);">
-	      <option value="">Select Option</option>
-	      <option value="CABBENPNTK-Benton_Painted">Benton Painted - Each - $0.00</option>
-	      <option value="CABBENSTNK-Benton_Stained">Benton Stained - Each - $0.00</option>
-		  <option value="CABLANPNTK-Landen_Painted">Landen Painted - Each - $0.00</option>
-		  <option value="CABLANSTNK-Landen_Stained">Landen Stained - Each - $0.00</option>
-		  <option value="CABSAYSTNK-Saybrooke_Stained">Saybrooke Stained - Each - $0.00</option>
-	    </select>
-		<input type="hidden" name="kitchen_perimeter_cabinets_uom" value="Each">
-	  </div>
-
-	  <div id="clear"></div>
-
-	  <div id="cabinets-perimeter-painted" style="display: none;">
-		<div id="subsection_title">
-          Color
-        </div>
-        <div id="section_options">
-          <select name="kitchen_perimeter_cabinets_color">
-	        <option value="">Select Option</option>
-	        <option value="Antique">Antique</option>
-	        <option value="White">White</option>
-		  </select>
-		</div>
-	  </div>
-	  <div id="cabinets-perimeter-stained" style="display: none;">
-		<div id="subsection_title">
-          Color
-        </div>
-        <div id="section_options">
-		  <select name="kitchen_perimeter_cabinets_color">
-	        <option value="">Select Option</option>
-	        <option value="Cafe">Cafe</option>
-	        <option value="Saddle">Saddle</option>
-		    <option value="Sarsparilla">Sarsparilla</option>
-	        <option value="Umber">Umber</option>
-		  </select>
-	    </div>
-	  </div>
-	  <div id="cabinets-perimeter-saybrooke" style="display: none;">
-		<div id="subsection_title">
-          Color
-        </div>
-        <div id="section_options">
-          <select name="kitchen_perimeter_cabinets_color">
-	        <option value="">Select Option</option>
-	        <option value="Autumn">Autumn</option>
-	        <option value="Cafe">Cafe</option>
-		    <option value="Rouge">Rouge</option>
-	        <option value="Saddle">Saddle</option>
-		    <option value="Sarsparilla">Sarsparilla</option>
-	        <option value="Umber">Umber</option>
-		  </select>
-		</div>
-	  </div>
-
-	  <div id="clear"></div>
-
-	  <div id="section_title">
-        Island Countertops
-	  </div>
-	  <div id="section_options">
-        <select name="kitchen_island_countertops" onchange="show_countertops_island_options(this.value);">
-	      <option value="">Select Option</option>
-		  <option value="TOPSKITIOT1-Signature">Signature - Each - $0.00</option>
-	      <option value="TOPSKITIOT2-Classic">Classic - Each - $0.00</option>
-		  <option value="TOPSKITIOT3-Premier">Premier - Each - $870.00</option>
-	    </select>
-	  </div>
-
-	  <div id="clear"></div>
-
-	  <div id="countertops-island-signature" style="display: none;">
-		<div id="subsection_title">
-          Material/Color/Finish
-        </div>
-        <div id="section_options">
-          <select name="kitchen_island_countertops_color">
-		    <option value="">Select Option</option>
-	        <option value="Granite_Blanco_Perla_Polished">Granite Blanco Perla Polished</option>
-	        <option value="Granite_New_Venetian_Gold_Polished">Granite New Venetian Gold Polished</option>
-		    <option value="Granite_Raven_Black_Polished">Granite Raven Black Polished</option>
-	        <option value="Granite_Steel_Gray_Polished">Granite Steel Gray Polished</option>
-		    <option value="Granite_Tropic_Brown_Polished">Granite Tropic Brown Polished</option>
-		    <option value="Granite_Uba_Tuba_Polished">Granite Uba Tuba Polished</option>
-		  </select>
-		</div>
-		<div id="clear"></div>
-		<div id="subsection_title">
-          Edge
-        </div>
-        <div id="section_options">
-		  <select name="kitchen_island_countertops_edge">
-	        <option value="">Select Option</option>
-		    <option value="1/2_Bullnose">1/2 Bullnose</option>
-	        <option value="1/4_Bevel">1/4 Bevel</option>
-		    <option value="Flat">Flat</option>
-	      </select>
-		</div>
-	  </div>
-	  <div id="countertops-island-classic" style="display: none;">
-		<div id="subsection_title">
-          Material/Color/Finish
-        </div>
-        <div id="section_options">
-          <select name="kitchen_island_countertops_color">
-	        <option value="">Select Option</option>
-		    <option value="Granite_Andino_White_Polished">Granite Andino White Polished</option>
-	        <option value="Granite_Nero_Onion_Leathered">Granite Nero Onion Polished</option>
-		    <option value="Granite_Raven_Black_Honed">Granite Raven Black Honed</option>
-	        <option value="Granite_River_White_Honed">Granite River White Honed</option>
-		    <option value="Granite_River_White_Polished">Granite River White Polished</option>
-		  </select>
-		</div>
-		<div id="clear"></div>
-		<div id="subsection_title">
-          Edge
-        </div>
-        <div id="section_options">
-		  <select name="kitchen_island_countertops_edge">
-	        <option value="">Select Option</option>
-		    <option value="1/2_Bullnose">1/2 Bullnose</option>
-	        <option value="1/4_Bevel">1/4 Bevel</option>
-		    <option value="Flat">Flat</option>
-	      </select>
-		</div>
-	  </div>
-	  <div id="countertops-island-premier" style="display: none;">
-		<div id="subsection_title">
-          Material/Color/Finish
-        </div>
-        <div id="section_options">
-          <select name="kitchen_island_countertops_color">
-	        <option value="">Select Option</option>
-		    <option value="Quartz_Silestone_Altair_Polished">Quartz Silestone Altair Polished</option>
-	        <option value="Quartz_Silestone_Blanco_Maple_Polished">Quartz Silestone Blanco Maple Polished</option>
-		    <option value="Quartz_Silestone_Cygnus_Polished">Quartz Silestone Cygnus Polished</option>
-	        <option value="Quartz_Silestone_Doradus_Polished">Quartz Silestone Doradus Polished</option>
-		    <option value="Quartz_Silestone_Grey_Amazon_Polished">Quartz Silestone Grey Amazon Polished</option>
-		    <option value="Quartz_Silestone_Grey_Expo_Polished">Quartz Silestone Grey Expo Polished</option>
-	        <option value="Quartz_Silestone_Ivory_Coast_Polished">Quartz Silestone Ivory Coast Polished</option>
-		    <option value="Quartz_Silestone_Lagoon_Polished">Quartz Silestone Lagoon Polished</option>
-	        <option value="Quartz_Silestone_Lyra_Polished">Quartz Silestone Lyra Polished</option>
-		    <option value="Quartz_Silestone_Merope_Polished">Quartz Silestone Merope Polished</option>
-	        <option value="Quartz_Silestone_White_Zeus_Polished">Quartz Silestone White Zeus Polished</option>
-		    <option value="Quartz_Silestone_Yukon_Blanco_Polished-">Quartz Silestone Yukon Blanco Polished</option>
-		  </select>
-		</div>
-		<div id="clear"></div>
-		<div id="subsection_title">
-          Edge
-        </div>
-        <div id="section_options">
-		  <select name="kitchen_island_countertops_edge">
-	        <option value="">Select Option</option>
-		    <option value="1/2_Bullnose">1/2 Bullnose</option>
-	        <option value="1/4_Bevel">1/4 Bevel</option>
-		    <option value="Flat">Flat</option>
-	      </select>
-		</div>
-	  </div>
-
-	  <div id="clear"></div>
-
-	  <div id="section_title">
-        Perimeter Countertops
-	  </div>
-	  <div id="section_options">
-        <select name="kitchen_perimeter_countertops" onchange="show_countertops_perimeter_options(this.value);">
-	      <option value="">Select Option</option>
-		  <option value="TOPSKITKT1-Signature">Signature - Each - $0.00</option>
-	      <option value="TOPSKITKT2-Classic">Classic - Each - $0.00</option>
-		  <option value="TOPSKITKT3-Premier">Premier - Each - $950.00</option>
-	    </select>
-	  </div>
-
-	  <div id="clear"></div>
-
-	  <div id="countertops-perimeter-signature" style="display: none;">
-		<div id="subsection_title">
-          Material/Color/Finish
-        </div>
-        <div id="section_options">
-          <select name="kitchen_perimeter_countertops_color">
-		    <option value="">Select Option</option>
-	        <option value="Granite_Blanco_Perla_Polished">Granite Blanco Perla Polished</option>
-	        <option value="Granite_New_Venetian_Gold_Polished">Granite New Venetian Gold Polished</option>
-		    <option value="Granite_Raven_Black_Polished">Granite Raven Black Polished</option>
-	        <option value="Granite_Steel_Gray_Polished">Granite Steel Gray Polished</option>
-		    <option value="Granite_Tropic_Brown_Polished">Granite Tropic Brown Polished</option>
-		    <option value="Granite_Uba_Tuba_Polished">Granite Uba Tuba Polished</option>
-		  </select>
-		</div>
-		<div id="clear"></div>
-		<div id="subsection_title">
-          Edge
-        </div>
-        <div id="section_options">
-		  <select name="kitchen_perimeter_countertops_edge">
-	        <option value="">Select Option</option>
-		    <option value="1/2_Bullnose">1/2 Bullnose</option>
-	        <option value="1/4_Bevel">1/4 Bevel</option>
-		    <option value="Flat">Flat</option>
-	      </select>
-		</div>
-	  </div>
-	  <div id="countertops-perimeter-classic" style="display: none;">
-		<div id="subsection_title">
-          Material/Color/Finish
-        </div>
-        <div id="section_options">
-          <select name="kitchen_perimeter_countertops_color">
-	        <option value="">Select Option</option>
-		    <option value="Granite_Andino_White_Polished">Granite Andino White Polished</option>
-	        <option value="Granite_Nero_Onion_Leathered">Granite Nero Onion Polished</option>
-		    <option value="Granite_Raven_Black_Honed">Granite Raven Black Honed</option>
-	        <option value="Granite_River_White_Honed">Granite River White Honed</option>
-		    <option value="Granite_River_White_Polished">Granite River White Polished</option>
-		  </select>
-		</div>
-		<div id="clear"></div>
-		<div id="subsection_title">
-          Edge
-        </div>
-        <div id="section_options">
-		  <select name="kitchen_perimeter_countertops_edge">
-	        <option value="">Select Option</option>
-		    <option value="1/2_Bullnose">1/2 Bullnose</option>
-	        <option value="1/4_Bevel">1/4 Bevel</option>
-		    <option value="Flat">Flat</option>
-	      </select>
-		</div>
-	  </div>
-	  <div id="countertops-perimeter-premier" style="display: none;">
-		<div id="subsection_title">
-          Material/Color/Finish
-        </div>
-        <div id="section_options">
-          <select name="kitchen_perimeter_countertops_color">
-	        <option value="">Select Option</option>
-		    <option value="Quartz_Silestone_Altair_Polished">Quartz Silestone Altair Polished</option>
-	        <option value="Quartz_Silestone_Blanco_Maple_Polished">Quartz Silestone Blanco Maple Polished</option>
-		    <option value="Quartz_Silestone_Cygnus_Polished">Quartz Silestone Cygnus Polished</option>
-	        <option value="Quartz_Silestone_Doradus_Polished">Quartz Silestone Doradus Polished</option>
-		    <option value="Quartz_Silestone_Grey_Amazon_Polished">Quartz Silestone Grey Amazon Polished</option>
-		    <option value="Quartz_Silestone_Grey_Expo_Polished">Quartz Silestone Grey Expo Polished</option>
-	        <option value="Quartz_Silestone_Ivory_Coast_Polished">Quartz Silestone Ivory Coast Polished</option>
-		    <option value="Quartz_Silestone_Lagoon_Polished">Quartz Silestone Lagoon Polished</option>
-	        <option value="Quartz_Silestone_Lyra_Polished">Quartz Silestone Lyra Polished</option>
-		    <option value="Quartz_Silestone_Merope_Polished">Quartz Silestone Merope Polished</option>
-	        <option value="Quartz_Silestone_White_Zeus_Polished">Quartz Silestone White Zeus Polished</option>
-		    <option value="Quartz_Silestone_Yukon_Blanco_Polished-">Quartz Silestone Yukon Blanco Polished</option>
-		  </select>
-		</div>
-		<div id="clear"></div>
-		<div id="subsection_title">
-          Edge
-        </div>
-        <div id="section_options">
-		  <select name="kitchen_perimeter_countertops_edge">
-	        <option value="">Select Option</option>
-		    <option value="1/2_Bullnose">1/2 Bullnose</option>
-	        <option value="1/4_Bevel">1/4 Bevel</option>
-		    <option value="Flat">Flat</option>
-	      </select>
-		</div>
-	  </div>
-
-	  <div id="clear"></div>
-
-      <div id="section_title">
-        BackSplash Options
-	  </div>
-	  <div id="section_options">
-        <select name="backsplash" onchange="show_backsplash_options(this.value);">
-	      <option value="">Select Option</option>
-		  <option value="Signature">Signature - Each - $0.00</option>
-	      <option value="Classic">Classic - Each - $0.00</option>
-		  <option value="Premier">Premier - Each - $420.00</option>
-	    </select>
-	  </div>
-
-	  <div id="clear"></div>
-
-	  <div id="backsplash-signature" style="display: none;">
-		<div id="subsection_title">
-          Style/Color/Pattern
-        </div>
-        <div id="section_options">
-          <select name="backsplash_pattern">
-	        <option value="">Select Option</option>
-		    <option value="SPLASHT14-Artisan_1:_Daltile_Rittenhouse_3x6_Arctic_White_Cinderblock">Artisan 1</option>
-		    <option value="SPLASHT15-Artisan_2:_Daltile_Rittenhouse_3x6_Desert_Gray_White_Cinderblock">Artisan 2</option>
-		    <option value="SPLASHT16-Heritage_1:_Daltile_Rittenhouse_3x6_Biscuit_Cinderblock">Heritage 1</option>
-		    <option value="SPLASHT17-Heritage_2:_Daltile_Rittenhouse_3x6_Black_Cinderblock">Heritage 2</option>
-		    <option value="SPLASHT18-Heritage_3:_Emser_Slate_4x4_Midnight_Black_Cinderblock">Heritage 3</option>
-		    <option value="SPLASHT11-Old_World_1:_Emser_Fontane_3x6_Ivory_Cinderblock">Old World 1</option>
-		    <option value="SPLASHT12-Old_World_2:_Emser_Fontane_4x4_Walnut_Diagonal">Old World 2</option>
-		    <option value="SPLASHT12-Old_World_3:_Emser_Strands_3x12_Olive_Random">Old World 3</option>
-		  </select>
-		</div>
-		<div id="clear"></div>
-		<div id="subsection_title">
-          Grout
-        </div>
-        <div id="section_options">
-		  <select name="backsplash_grout">
-	        <option value="">Select Option</option>
-		    <option value="Alabaster">Alabaster</option>
-	        <option value="Charcoal">Charcoal</option>
-		    <option value="Ivory">Ivory</option>
-	        <option value="Pewter">Pewter</option>
-		    <option value="Silver">Silver</option>
-		    <option value="Warm_Grey">Warm Grey</option>
-		    <option value="White">White</option>
-	      </select>
-		</div>
-	  </div>
-	  <div id="backsplash-classic" style="display: none;">
-		<div id="subsection_title">
-          Style/Color/Pattern
-        </div>
-        <div id="section_options">
-          <select name="backsplash_pattern">
-	        <option value="">Select Option</option>
-		    <option value="SPLASHT23-Artisan_1:_Ember_Perspective_6x24_Grey_Random">Artisan 1</option>
-		    <option value="SPLASHT24-Artisan_2:_Daltile_Rittenhouse_3x6_Arctic_White_Herringbone">Artisan 2</option>
-		    <option value="SPLASHT25-Heritage_1:_Daltile_Rittenhouse_3x6_Desert_Gray_Herringbone">Heritage 1</option>
-		    <option value="SPLASHT26-Heritage_2:_Daltile_Rittenhouse_3x6_Biscuit_Herringbone">Artisan 1</option>
-		    <option value="SPLASHT21-Old World_1:_Emser_Spectrum_3x12_Aderra_Random">Old World 1</option>
-		    <option value="SPLASHT22-Old World_2:_Emser_Spectrum_3x12_Acamar_Random">Old World 2</option>
-		  </select>
-		</div>
-		<div id="clear"></div>
-		<div id="subsection_title">
-          Grout
-        </div>
-        <div id="section_options">
-		  <select name="backsplash_grout">
-	        <option value="">Select Option</option>
-		    <option value="Alabaster">Alabaster</option>
-	        <option value="Charcoal">Charcoal</option>
-		    <option value="Ivory">Ivory</option>
-	        <option value="Pewter">Pewter</option>
-		    <option value="Silver">Silver</option>
-		    <option value="Warm_Grey">Warm Grey</option>
-		    <option value="White">White</option>
-	      </select>
-		</div>
-	  </div>
-	  <div id="backsplash-premier" style="display: none;">
-		<div id="subsection_title">
-          Style/Color/Pattern
-        </div>
-        <div id="section_options">
-          <select name="backsplash_pattern">
-	        <option value="">Select Option</option>
-		    <option value="SPLASHT33-Artisan_1:_Ember_Palladino_3x6_Albanella_Cinderblock">Artisan 1</option>
-		    <option value="SPLASHT34-Artisan_2:_Ember_Times_Square_2x12_Grey_Random">Artisan 2</option>
-		    <option value="SPLASHT35-Heritage_1:_Ember_Slate_4x4_Autumn_Lilac_Cinderblock">Heritage 1</option>
-		    <option value="SPLASHT31-Old_World_1:_Interceramics_IC_Brite_2x8_Graphite_Random">Old World 1</option>
-		    <option value="SPLASHT32-Old_World_2:_Interceramics_IC_Brite_2x8_Smoke_Random">Old World 2</option>
-		  </select>
-		</div>
-		<div id="clear"></div>
-		<div id="subsection_title">
-          Grout
-        </div>
-        <div id="section_options">
-		  <select name="backsplash_grout">
-	        <option value="">Select Option</option>
-		    <option value="Alabaster">Alabaster</option>
-	        <option value="Charcoal">Charcoal</option>
-		    <option value="Ivory">Ivory</option>
-	        <option value="Pewter">Pewter</option>
-		    <option value="Silver">Silver</option>
-		    <option value="Warm_Grey">Warm Grey</option>
-		    <option value="White">White</option>
-	      </select>
-		</div>
-	  </div>
-
-	  <div id="clear"></div>
-
-	  <div id="section_title">
-        Sink Options
-	  </div>
-	  <div id="section_options">
-        <select name="kitchen_sink" onchange="show_kitchen_sink_options(this.value);">
-	      <option value="">Select Option</option>
-		  <option value="SINKSSUMKIT-Undermount_Stainless_Steel">Undermount Stainless Steel - Each - $0.00</option>
-	      <option value="SSKITFARM-Hampton_Stainless_Steel_Single_Bowl_Apron_Front_Sink">Hampton Stainless Steel Single Bowl Apron Front Sink - Each - $400.00</option>
-		  <option value="WHKITUNDER1-White_Undermount_Cast_Iron">White Undermount Cast Iron with One Large Bowl - Each - $450.00</option>
-	      <option value="WHKITUNDER-White_Undermount_Cast_Iron">White Undermount Cast Iron with Two Equal Bowls - Each - $450.00</option>
-		  <option value="WHKITFARM-White_Cast_Iron_Apron_Front">White Cast Iron Apron Front - Each - $700.00</option>
-	    </select>
-	  </div>
-	  <div id ="clear"></div>
-	  <div id="sink_options" style="display: none;">
-	    <div id="subsection_title">
-		  Bowl
-		</div>
-		<div id="section_options">
-		  <select name="kitchen_sink_bowl">
-	        <option value="">Select Bowl Option</option>
-		    <option value="SINKSSUMKIT-1_Large_Bowl">1 Large Bowl</option>
-	        <option value="SINKSSUMKIT-2_Equal_Bowls">2 Equal Bowls</option>
-		    <option value="SINKSSUMKIT-Large_Small_Bowls">Large-Small Bowls</option>
-	      </select>
-		</div>
-	  </div>
-
-	  <div id="clear"></div>
-
-	  <div id="section_title">
-        Plumbing Options
-	  </div>
-
-	  <div id="clear"></div>
-
-	  <div id="subsection_title">
-        Kitchen Faucet
-	  </div>
-	  <div id="section_options">
-        <select name="kitchen_faucet">
-	      <option value="">Select Option</option>
-		  <option value="KOH560CP">Kohler Bellera with Pull Down Spout in Polished Chrome - Each - $0.00</option>
-		  <option value="KOH560VS">Kohler Bellera with Pull Down Spout in Vibrant Stainless - Each - $70.00</option>
-		  <option value="KOH560BZ">Kohler Bellera with Pull Down Spout in Oil Rubbed Bronze - Each - $80.00</option>
-		  <option value="KOH596CP">Kohler Simplice 1 Hole with Pull Down Spout in Polished Chrome - Each - $30.00</option>
-		  <option value="KOH596VS">Kohler Simplice 1 Hole with Pull Down Spout in Vibrant Stainless - Each - $100.00</option>
-		  <option value="DAN455158">Danze Parma in Chrome - Each - $220.00</option>
-		  <option value="DAN455158SS">Danze Parma in Stainless Steel - Each - $400.00</option>
-		  <option value="KOH72218CP">Kohler Sensate Touchless with Pull Down Spout in Polished Chrome - Each - $450.00</option>
-		  <option value="KOH72218VS">Kohler Sensate Touchless with Pull Down Spout in Vibrant Stainless - Each - $590.00</option>
-		  <option value="KOH61313CP">Kohler Parq Bridge Style in Polished Chrome - Each - $750.00</option>
-		  <option value="KOH61313VS">Kohler Parq Bridge Style in Vibrant Stainless - Each - $1120.00</option>
-		  <option value="KOH61313BZ">Kohler Parq Bridge Style in Oil Rubbed Bronze - Each - $1120.00</option>
-	    </select>
-		<input type="hidden" name="kitchen_faucet_uom" value="Each">
-	  </div>
-
-	  <div id="clear"></div>
-
-      <div id="subsection_title">
-        Soap Dispenser
-	  </div>
-	  <div id="section_options">
-        <select name="soap_dispenser">
-	      <option value="">Select Option</option>
-		  <option value="KOHSOAPCP">Kohler Chrome - Each - $90.00</option>
-		  <option value="KOHSOAPVS">Kohler Vibrant Stainless - Each - $90.00</option>
-		  <option value="KOHSOAPBZ">Kohler Oil Rubbed Bronze - Each - $90.00</option>
-	    </select>
-		<input type="hidden" name="soap_dispenser_uom" value="Each">
-	  </div>
-
-	  <div id="clear"></div>
-	</div>
-
-	<h1>Master Bath Options</h1>
-	<div id="panel">
-	  <div id="section_title">
-        Cabinetry
-	  </div>
-	  <div id="section_options">
-        <select id="dropdown" name="master_bath_cabinets" onchange="show_master_bath_cabinet_options(this.value);">
-	      <option value="">Select Option</option>
-	      <option value="CABBENPNTMB-Benton_Painted">Benton Painted - Each - $0.00</option>
-	      <option value="CABBENSTNMB-Benton_Stained">Benton Stained - Each - $0.00</option>
-	      <option value="CABLANPNTMB-Landen_Painted">Landen Painted - Each - $0.00</option>
-	      <option value="CABLANSTNMB-Landen_Stained">Landen Stained - Each - $0.00</option>
-	      <option value="CABSAYSTNMB-Saybrooke_Stained">Saybrooke Stained - Each - $0.00</option>
-        </select>
-	  </div>
-
-	  <div id="clear"></div>
-
-	  <div id="master-bath-painted" style="display: none;">
-		<div id="subsection_title">
-          Color
-        </div>
-        <div id="section_options">
-          <select name="master-bath-painted_cabinets_color">
-	        <option value="">Select Option</option>
-	        <option value="Antique">Antique</option>
-	        <option value="White">White</option>
-		  </select>
-		</div>
-	  </div>
-	  <div id="master-bath-stained" style="display: none;">
-	    <div id="subsection_title">
-           Color
-        </div>
-        <div id="section_options">
-		  <select name="master-bath-painted_color">
-	        <option value="">Select Option</option>
-	        <option value="Cafe">Cafe</option>
-	        <option value="Saddle">Saddle</option>
-		    <option value="Sarsparilla">Sarsparilla</option>
-	        <option value="Umber">Umber</option>
-		  </select>
-	    </div>
-	  </div>
-	  <div id="master-bath-saybrooke" style="display: none;">
-		<div id="subsection_title">
-          Color
-        </div>
-        <div id="section_options">
-          <select name="master-bath-painted_color">
-	        <option value="">Select Option</option>
-	        <option value="Autumn">Autumn</option>
-	        <option value="Cafe">Cafe</option>
-		    <option value="Rouge">Rouge</option>
-	        <option value="Saddle">Saddle</option>
-		    <option value="Sarsparilla">Sarsparilla</option>
-	        <option value="Umber">Umber</option>
-		  </select>
-		</div>
-	  </div>
-
-	  <div id="clear"></div>
-
-      <div id="section_title">
-        Tub Skirt
-	  </div>
-	  <div id="section_options">
-        <select id="dropdown" name="master_bath_tub_skirt" onchange="show_master_bath_tub_skirt_options(this.value);">
-	      <option value="">Select Option</option>
-	      <option value="CABBENPNTT-Benton_Painted">Benton Painted - Each - $0.00</option>
-	      <option value="CABBENSTNT-Benton_Stained">Benton Stained - Each - $0.00</option>
-	      <option value="CABLANPNTT-Landen_Painted">Landen Painted - Each - $0.00</option>
-	      <option value="CABLANSTNT-Landen_Stained">Landen Stained - Each - $0.00</option>
-	      <option value="CABSAYSTNT-Saybrooke_Stained">Saybrooke Stained - Each - $0.00</option>
-        </select>
-	  </div>
-
-	  <div id="clear"></div>
-
-	  <div id="master-bath-tub-skirt-painted" style="display: none;">
-		<div id="subsection_title">
-          Color
-        </div>
-        <div id="section_options">
-          <select name="master-bath-tub-skirt-color">
-	        <option value="">Select Option</option>
-	        <option value="Antique">Antique</option>
-	        <option value="White">White</option>
-		  </select>
-		</div>
-	  </div>
-	  <div id="master-bath-tub-skirt-stained" style="display: none;">
-	    <div id="subsection_title">
-           Color
-        </div>
-        <div id="section_options">
-		  <select name="master-bath-tub-skirt-color">
-	        <option value="">Select Option</option>
-	        <option value="Cafe">Cafe</option>
-	        <option value="Saddle">Saddle</option>
-		    <option value="Sarsparilla">Sarsparilla</option>
-	        <option value="Umber">Umber</option>
-		  </select>
-	    </div>
-	  </div>
-	  <div id="master-bath-tub-skirt-saybrooke" style="display: none;">
-		<div id="subsection_title">
-          Color
-        </div>
-        <div id="section_options">
-          <select name="master-bath-tub-skirt-color">
-	        <option value="">Select Option</option>
-	        <option value="Autumn">Autumn</option>
-	        <option value="Cafe">Cafe</option>
-		    <option value="Rouge">Rouge</option>
-	        <option value="Saddle">Saddle</option>
-		    <option value="Sarsparilla">Sarsparilla</option>
-	        <option value="Umber">Umber</option>
-		  </select>
-		</div>
-	  </div>
-
-	  <div id="clear"></div>
-
-	  <div id="note">
-	    Only Select finish if SPA bath option was selected at contract.
-	  </div>
-
-      <div id="clear"></div>
-
-      <div id="section_title">
-        SPA Bath
-	  </div>
-	  <div id="section_options">
-        <select id="dropdown" name="master_bath_spa" onchange="show_master_bath_spa_options(this.value);">
-	      <option value="">Select Option</option>
-	      <option value="CABBENPNTSP-Benton_Painted">Benton Painted - Each - $0.00</option>
-	      <option value="CABBENSTNSP-Benton_Stained">Benton Stained - Each - $0.00</option>
-	      <option value="CABLANPNTSP-Landen_Painted">Landen Painted - Each - $0.00</option>
-	      <option value="CABLANSTNSP-Landen_Stained">Landen Stained - Each - $0.00</option>
-	      <option value="CABSAYSTNSP-Saybrooke_Stained">Saybrooke Stained - Each - $0.00</option>
-        </select>
-	  </div>
-
-	  <div id="clear"></div>
-
-	  <div id="master-bath-spa-painted" style="display: none;">
-		<div id="subsection_title">
-          Color
-        </div>
-        <div id="section_options">
-          <select name="master-bath-spa-color">
-	        <option value="">Select Option</option>
-	        <option value="Antique">Antique</option>
-	        <option value="White">White</option>
-		  </select>
-		</div>
-	  </div>
-	  <div id="master-bath-spa-stained" style="display: none;">
-	    <div id="subsection_title">
-           Color
-        </div>
-        <div id="section_options">
-		  <select name="master-bath-spa-color">
-	        <option value="">Select Option</option>
-	        <option value="Cafe">Cafe</option>
-	        <option value="Saddle">Saddle</option>
-		    <option value="Sarsparilla">Sarsparilla</option>
-	        <option value="Umber">Umber</option>
-		  </select>
-	    </div>
-	  </div>
-	  <div id="master-bath-spa-saybrooke" style="display: none;">
-		<div id="subsection_title">
-          Color
-        </div>
-        <div id="section_options">
-          <select name="master-bath-spa-color">
-	        <option value="">Select Option</option>
-	        <option value="Autumn">Autumn</option>
-	        <option value="Cafe">Cafe</option>
-		    <option value="Rouge">Rouge</option>
-	        <option value="Saddle">Saddle</option>
-		    <option value="Sarsparilla">Sarsparilla</option>
-	        <option value="Umber">Umber</option>
-		  </select>
-		</div>
-	  </div>
-
-	  <div id="clear"></div>
-
-      <div id="section_title">
-        Tub Deck
-	  </div>
-	  <div id="section_options">
-        <select name="tub_deck_countertops" onchange="show_tub_deck_countertops_options(this.value);">
-	      <option value="">Select Option</option>
-		  <option value="TOPSMBTUBT1-Signature">Signature - Each - $0.00</option>
-	      <option value="TOPSMBTUBT2-Classic">Classic - Each - $0.00</option>
-		  <option value="TOPSMBTUBT3-Premier">Premier - Each - $280.00</option>
-	    </select>
-	  </div>
-
-	  <div id="clear"></div>
-
-	  <div id="tub_deck_countertops-signature" style="display: none;">
-		<div id="subsection_title">
-          Material/Color/Finish
-        </div>
-        <div id="section_options">
-          <select name="tub_deck_countertops_color">
-		    <option value="">Select Option</option>
-	        <option value="Granite_Blanco_Perla_Polished">Granite Blanco Perla Polished</option>
-	        <option value="Granite_New_Venetian_Gold_Polished">Granite New Venetian Gold Polished</option>
-		    <option value="Granite_Raven_Black_Polished">Granite Raven Black Polished</option>
-	        <option value="Granite_Steel_Gray_Polished">Granite Steel Gray Polished</option>
-		    <option value="Granite_Tropic_Brown_Polished">Granite Tropic Brown Polished</option>
-		    <option value="Granite_Uba_Tuba_Polished">Granite Uba Tuba Polished</option>
-		  </select>
-		</div>
-		<div id="clear"></div>
-		<div id="subsection_title">
-          Edge
-        </div>
-        <div id="section_options">
-		  <select name="tub_deck_countertops_edge">
-	        <option value="">Select Option</option>
-		    <option value="1/2_Bullnose">1/2 Bullnose</option>
-	        <option value="1/4_Bevel">1/4 Bevel</option>
-		    <option value="Flat">Flat</option>
-	      </select>
-		</div>
-	  </div>
-	  <div id="tub_deck_countertops-classic" style="display: none;">
-		<div id="subsection_title">
-          Material/Color/Finish
-        </div>
-        <div id="section_options">
-          <select name="tub_deck_countertops_color">
-	        <option value="">Select Option</option>
-		    <option value="Granite_Andino_White_Polished">Granite Andino White Polished</option>
-	        <option value="Granite_Nero_Onion_Leathered">Granite Nero Onion Polished</option>
-		    <option value="Granite_Raven_Black_Honed">Granite Raven Black Honed</option>
-	        <option value="Granite_River_White_Honed">Granite River White Honed</option>
-		    <option value="Granite_River_White_Polished">Granite River White Polished</option>
-		  </select>
-		</div>
-		<div id="clear"></div>
-		<div id="subsection_title">
-          Edge
-        </div>
-        <div id="section_options">
-		  <select name="tub_deck_countertops_edge">
-	        <option value="">Select Option</option>
-		    <option value="1/2_Bullnose">1/2 Bullnose</option>
-	        <option value="1/4_Bevel">1/4 Bevel</option>
-		    <option value="Flat">Flat</option>
-	      </select>
-		</div>
-	  </div>
-	  <div id="tub_deck_countertops-premier" style="display: none;">
-		<div id="subsection_title">
-          Material/Color/Finish
-        </div>
-        <div id="section_options">
-          <select name="tub_deck_countertops_color">
-	        <option value="">Select Option</option>
-		    <option value="Quartz_Silestone_Altair_Polished">Quartz Silestone Altair Polished</option>
-	        <option value="Quartz_Silestone_Blanco_Maple_Polished">Quartz Silestone Blanco Maple Polished</option>
-		    <option value="Quartz_Silestone_Cygnus_Polished">Quartz Silestone Cygnus Polished</option>
-	        <option value="Quartz_Silestone_Doradus_Polished">Quartz Silestone Doradus Polished</option>
-		    <option value="Quartz_Silestone_Grey_Amazon_Polished">Quartz Silestone Grey Amazon Polished</option>
-		    <option value="Quartz_Silestone_Grey_Expo_Polished">Quartz Silestone Grey Expo Polished</option>
-	        <option value="Quartz_Silestone_Ivory_Coast_Polished">Quartz Silestone Ivory Coast Polished</option>
-		    <option value="Quartz_Silestone_Lagoon_Polished">Quartz Silestone Lagoon Polished</option>
-	        <option value="Quartz_Silestone_Lyra_Polished">Quartz Silestone Lyra Polished</option>
-		    <option value="Quartz_Silestone_Merope_Polished">Quartz Silestone Merope Polished</option>
-	        <option value="Quartz_Silestone_White_Zeus_Polished">Quartz Silestone White Zeus Polished</option>
-		    <option value="Quartz_Silestone_Yukon_Blanco_Polished-">Quartz Silestone Yukon Blanco Polished</option>
-		  </select>
-		</div>
-		<div id="clear"></div>
-		<div id="subsection_title">
-          Edge
-        </div>
-        <div id="section_options">
-		  <select name="tub_deck_countertops_edge">
-	        <option value="">Select Option</option>
-		    <option value="1/2_Bullnose">1/2 Bullnose</option>
-	        <option value="1/4_Bevel">1/4 Bevel</option>
-		    <option value="Flat">Flat</option>
-	      </select>
-		</div>
-	  </div>
-
-	  <div id="clear"></div>
-
-	  <div id="section_title">
-        Vanity
-	  </div>
-	  <div id="section_options">
-        <select name="vanity_countertops" onchange="show_vanity_countertops_options(this.value);">
-	      <option value="">Select Option</option>
-		  <option value="TOPSMBT1-Signature">Signature - Each - $0.00</option>
-	      <option value="TOPSMBT2-Classic">Classic - Each - $0.00</option>
-		  <option value="TOPSMBT3-Premier">Premier - Each - $630.00</option>
-	    </select>
-	  </div>
-
-	  <div id="clear"></div>
-
-	  <div id="vanity_countertops-signature" style="display: none;">
-		<div id="subsection_title">
-          Material/Color/Finish
-        </div>
-        <div id="section_options">
-          <select name="vanity_countertops_color">
-		    <option value="">Select Option</option>
-	        <option value="Granite_Blanco_Perla_Polished">Granite Blanco Perla Polished</option>
-	        <option value="Granite_New_Venetian_Gold_Polished">Granite New Venetian Gold Polished</option>
-		    <option value="Granite_Raven_Black_Polished">Granite Raven Black Polished</option>
-	        <option value="Granite_Steel_Gray_Polished">Granite Steel Gray Polished</option>
-		    <option value="Granite_Tropic_Brown_Polished">Granite Tropic Brown Polished</option>
-		    <option value="Granite_Uba_Tuba_Polished">Granite Uba Tuba Polished</option>
-		  </select>
-		</div>
-		<div id="clear"></div>
-		<div id="subsection_title">
-          Edge
-        </div>
-        <div id="section_options">
-		  <select name="vanity_countertops_edge">
-	        <option value="">Select Option</option>
-		    <option value="1/2_Bullnose">1/2 Bullnose</option>
-	        <option value="1/4_Bevel">1/4 Bevel</option>
-		    <option value="Flat">Flat</option>
-	      </select>
-		</div>
-	  </div>
-	  <div id="vanity_countertops-classic" style="display: none;">
-		<div id="subsection_title">
-          Material/Color/Finish
-        </div>
-        <div id="section_options">
-          <select name="vanity_countertops_color">
-	        <option value="">Select Option</option>
-		    <option value="Granite_Andino_White_Polished">Granite Andino White Polished</option>
-	        <option value="Granite_Nero_Onion_Leathered">Granite Nero Onion Polished</option>
-		    <option value="Granite_Raven_Black_Honed">Granite Raven Black Honed</option>
-	        <option value="Granite_River_White_Honed">Granite River White Honed</option>
-		    <option value="Granite_River_White_Polished">Granite River White Polished</option>
-		  </select>
-		</div>
-		<div id="clear"></div>
-		<div id="subsection_title">
-          Edge
-        </div>
-        <div id="section_options">
-		  <select name="vanity_countertops_edge">
-	        <option value="">Select Option</option>
-		    <option value="1/2_Bullnose">1/2 Bullnose</option>
-	        <option value="1/4_Bevel">1/4 Bevel</option>
-		    <option value="Flat">Flat</option>
-	      </select>
-		</div>
-	  </div>
-	  <div id="vanity_countertops-premier" style="display: none;">
-		<div id="subsection_title">
-          Material/Color/Finish
-        </div>
-        <div id="section_options">
-          <select name="vanity_countertops_color">
-	        <option value="">Select Option</option>
-		    <option value="Quartz_Silestone_Altair_Polished">Quartz Silestone Altair Polished</option>
-	        <option value="Quartz_Silestone_Blanco_Maple_Polished">Quartz Silestone Blanco Maple Polished</option>
-		    <option value="Quartz_Silestone_Cygnus_Polished">Quartz Silestone Cygnus Polished</option>
-	        <option value="Quartz_Silestone_Doradus_Polished">Quartz Silestone Doradus Polished</option>
-		    <option value="Quartz_Silestone_Grey_Amazon_Polished">Quartz Silestone Grey Amazon Polished</option>
-		    <option value="Quartz_Silestone_Grey_Expo_Polished">Quartz Silestone Grey Expo Polished</option>
-	        <option value="Quartz_Silestone_Ivory_Coast_Polished">Quartz Silestone Ivory Coast Polished</option>
-		    <option value="Quartz_Silestone_Lagoon_Polished">Quartz Silestone Lagoon Polished</option>
-	        <option value="Quartz_Silestone_Lyra_Polished">Quartz Silestone Lyra Polished</option>
-		    <option value="Quartz_Silestone_Merope_Polished">Quartz Silestone Merope Polished</option>
-	        <option value="Quartz_Silestone_White_Zeus_Polished">Quartz Silestone White Zeus Polished</option>
-		    <option value="Quartz_Silestone_Yukon_Blanco_Polished-">Quartz Silestone Yukon Blanco Polished</option>
-		  </select>
-		</div>
-		<div id="clear"></div>
-		<div id="subsection_title">
-          Edge
-        </div>
-        <div id="section_options">
-		  <select name="vanity_countertops_edge">
-	        <option value="">Select Option</option>
-		    <option value="1/2_Bullnose">1/2 Bullnose</option>
-	        <option value="1/4_Bevel">1/4 Bevel</option>
-		    <option value="Flat">Flat</option>
-	      </select>
-		</div>
-	  </div>
-
-	  <div id="clear"></div>
-
-	  <div id="section_title">
-	    Master Sink
-	  </div>
-	  <div id="section_options">
-	    <select name="master_sink">
-		  <option value="">Select Option</option>
-		  <option value="UNDERMOUNTMA-Undermount-Porcelain_(both_bowls)">Undermount Porcelain (both bowls) - Pair - $0.00</option>
-		  <option value="SINKMEMCLMB-Kohler_Memoir_Classic_Drop_in_(both_bowls)">Kohler Memoir Classic Drop-in (both_bowls) - Pair - $530.00</option>
-		  <option value="SINKDEMIMB-Kohler_DemiLav_Drop_in_(both_bowls)">Kohler DemiLav Drop-in (both bowls) - Pair - $1040.00</option>
-		</select>
-	  </div>
-
-	  <div id="clear"></div>
-
-	  <div id="section_title">
-	    Faucets & Hardware
-	  </div>
-	  <div id="section_options">
-	    <select name="master_faucets">
-		  <option value="">Select Option</option>
-		  <option value="KOHDEVCPMB-Kohler_Devonshire_Chrome">Kohler Devonshire Chrome - Each - $0.00</option>
-		  <option value="KOHDEVBNMB-Kohler_Devonshire_Brushed_Nickel">Kohler Devonshire Brushed Nickel - Each - $450.00</option>
-		  <option value="KOHDEVBZMB-Kohler_Devonshire_Oil_Rubbed_Bronze">Kohler Devonshire Oil Rubbed Bronze - Each - $550.00</option>
-		  <option value="KOHALTCPMB-Kohler_Alteo_Chrome">Kohler Alteo Chrome - Each - $0.00</option>
-		  <option value="KOHALTBNMB-Kohler_Alteo_Brushed_Nickel">Kohler Alteo Brushed Nickel - Each - $450.00</option>
-		  <option value="KOHALTBZMB-Kohler_Alteo_Oil_Rubbed_Bronze">Kohler Alteo Oil Rubbed Bronze - Each - $650.00</option>
-		  <option value="KOHMARCPMB-Kohler_Margaux_Chrome">Kohler Margaux Chrome - Each - $1450.00</option>
-		  <option value="KOHMARBNMB-Kohler_Margaux_Brushed_Nickel">Kohler Margaux Brushed Nickel - Each - $2450.00</option>
-		</select>
-	  </div>
-
-	  <div id="clear"></div>
-
-	  <div id="section_title">
-	    Spa Tub Finish
-	  </div>
-	  <div id="section_options">
-	    <select name="spa_tub_finish">
-		  <option value="">Select Option</option>
-		  <option value="KOHTUBSPABN-Change_from_Chrome_to_Brushed_Nickel">Change from Chrome to Brushed Nickel - Each - $170.00</option>
-		  <option value="KOHTUBSPABZ-Change_from_Chrome_to_Oil_Rubbed_Bronze">Change from Chrome to Oil Rubbed Bronze - Each - $170.00</option>
-		</select>
-	  </div>
-
-	  <div id="clear"></div>
-
-	  <div id="section_title">
-	    Spa Shower Finish
-	  </div>
-	  <div id="section_options">
-	    <select name="spa_shower_finish">
-		  <option value="">Select Option</option>
-		  <option value="KOHSHOSPABN-Change_from_Chrome_to_Brushed_Nickel">Change from Chrome to Brushed Nickel - Each - $260.00</option>
-		  <option value="KOHSHOSPABZ-Change_from_Chrome_to_Oil_Rubbed_Bronze">Change from Chrome to Oil Rubbed Bronze - Each - $260.00</option>
-		</select>
-	  </div>
-
-	  <div id="clear"></div>
-
-	  <div id="section_title">
-	    Luxury Shower Finish
-	  </div>
-	  <div id="section_options">
-	    <select name="luxury_shower_finish">
-		  <option value="">Select Option</option>
-		  <option value="KOHSHOLUXBN-Change_from_Chrome_to_Brushed_Nickel">Change from Chrome to Brushed Nickel - Each - $360.00</option>
-		  <option value="KOHSHOLUXBZ-Change_from_Chrome_to_Oil_Rubbed_Bronze">Change from Chrome to Oil Rubbed Bronze - Each - $360.00</option>
-		</select>
-	  </div>
-
-	  <div id="clear"></div>
-
-	  <div id="section_title">
-	    Showerhead
-	  </div>
-	  <div id="section_options">
-	    <select name="showerhead">
-		  <option value="">Select Option</option>
-		  <option value="KOHMOXCPMB-Moxie_Single_Function_Showerhead_Chrome">Moxie Single-Function Showerhead in Chrome - Each - $170.00</option>
-		  <option value="KOHMOXBNMB-Moxie_Single_Function_Showerhead_Brushed_Nickel">Moxie Single-Function Showerhead in Brushed Nickel - Each - $390.00</option>
-		  <option value="KOHMOXBZMB-Moxie_Single_Function_Showerhead_Oil_Rubbed_Bronze">Moxie Single-Function Showerhead in Oil Rubbed Bronze - Each - $380.00</option>
-		  <option value="KOHHANDCPMB-FlipSide_Multi_Function_Handshower_Chrome">FlipSide Multi_Function Handshower in Chrome - Each - $260.00</option>
-		  <option value="KOHHANDBNMB-FlipSide_Multi_Function_Handshower_Brushed_Nickel">FlipSide Multi_Function Handshower in Brushed Nickel - Each - $450.00</option>
-		  <option value="KOHHANDBZMB-FlipSide_Multi_Function_Handshower_Oil_Rubbed_Bronze">FlipSide Multi_Function Handshower in Oil Rubbed Bronze - Each - $460.00</option>
-		</select>
-	  </div>
-
-	  <div id="clear"></div>
-
-	  <div id="section_title">
-	    Mirror
-	  </div>
-	  <div id="section_options">
-	    <select name="showerhead" onchange="show_master_bath_mirror_options(this.value);">
-		  <option value="">Select Option</option>
-		  <option value="MIRMBTILT-Tilt">Tilt - Each - $0.00</option>
-		  <option value="MIRMBDEC-Decorative_Framed">Decorative_Framed - Each - $0.00</option>
-		  <option value="MIRMBDEC2-Decorative_Framed_2">Decorative Framed 2 - Each - $160.00</option>
-		</select>
-	  </div>
-
-	  <div id="clear"></div>
-
-	  <div id="master-bath-mirror-tilt" style="display: none;">
-		<div id="subsection_title">
-          Finish
-        </div>
-        <div id="section_options">
-          <select name="master-bath-mirror-finish">
-	        <option value="">Select Option</option>
-	        <option value="Chrome_Plate_Brackets">Chrome Plate Brackets</option>
-	        <option value="Oil_Rubbed_Bronze_Plate_Brackets">Oil Rubbed Bronze Plate Brackets</option>
-			<option value="Stainless_Steel_Plate_Brackets">Stainless Steel Plate Brackets</option>
-		  </select>
-		</div>
-		<div id="clear"></div>
-		<div id="subsection_title">
-          Shape
-        </div>
-        <div id="section_options">
-          <select name="master-bath-mirror-shape">
-	        <option value="">Select Option</option>
-	        <option value="Oval">Oval</option>
-	        <option value="Rectangular">Rectangular</option>
-		  </select>
-		</div>
-	  </div>
-	  <div id="master-bath-mirror-dec" style="display: none;">
-	    <div id="subsection_title">
-           Color
-        </div>
-        <div id="section_options">
-		  <select name="master-bath-mirror-finish">
-	        <option value="">Select Option</option>
-	        <option value="Brown_Ribbed">Brown Ribbed</option>
-	        <option value="Cream_Sloped_with_Bronze_Lip">Cream Sloped with Bronze Lip</option>
-		    <option value="Painted_1x4_Frame_(color_to_match_trim_in_room)">Painted 1x4 Frame (color to match trim in room)</option>
-	        <option value="Silver_Sloped">Silver Sloped</option>
-		    <option value="Silver_with_Detailed_Lip">Silver with Detailed Lip</option>
-		  </select>
-	    </div>
-	  </div>
-	  <div id="master-bath-mirror-dec2" style="display: none;">
-		<div id="subsection_title">
-          Finish
-        </div>
-        <div id="section_options">
-          <select name="master-bath-mirror-finish">
-	        <option value="">Select Option</option>
-	        <option value="Brown_Sloped_with_Bronze_Finish">Brown Sloped with Bronze Finish</option>
-		  </select>
-		</div>
-	  </div>
-
-	  <div id="clear"></div>
-
-	  <div id="section_title">
-	    Tiled Shower Bench
-	  </div>
-	  <div id="section_options">
-	    <select name="tiled_shower_bench">
-		  <option value="">Select Option</option>
-		  <option value="TILESHBENCH-Tiled-Shower-Bench">Add a Tiled Shower Bench - Each - $375.00</option>
-		</select>
-	  </div>
-
-	  <div id="clear"></div>
-
-	  <div id="section_title">
-	    Shower Floor Tile
-	  </div>
-	  <div id="section_options">
-	    <select name="shower_floor_tile" onchange="show_master_shower_tile_options(this.value);">
-		  <option value="">Select Option</option>
-		  <option value="Signature">Signature - Each - $0.00</option>
-		  <option value="Classic">Classic - Each - $0.00</option>
-		  <option value="Premier">Premier - Each - $340.00</option>
-		</select>
-	  </div>
-
-	  <div id="clear"></div>
-
-	  <div id="master_shower_tile-signature" style="display: none;">
-		<div id="subsection_title">
-          Style/Color/Pattern
-        </div>
-        <div id="section_options">
-          <select name="master_shower_tile_pattern">
-	        <option value="">Select Option</option>
-		    <option value="TILESHFLT13-Artisan_1:_Emser_Pacific_2x2_Natural_Shower_Floor_Laid_in_a_Straight_Pattern">Artisan 1</option>
-		    <option value="TILESHFLT14-Artisan_2:_RF_Henry_Meshmounted_1x_Hex_Almond_Shower_Floor">Artisan 2</option>
-		    <option value="TILESHFLT15-Heritage_1:_RF_Henry_Meshmounted_1x_Hex_Ice_White_Shower_Floor">Heritage 1</option>
-		    <option value="TILESHFLT16-Heritage_2:_RF_Henry_Meshmounted_1x_Hex_Black_Shower_Floor">Heritage 2</option>
-		    <option value="TILESHFLT11-Old_World_1:_Emser_Fontane_4x4_Ivory_Shower_Floor_Laid_in_a_Straight_Pattern">Old World 1</option>
-		    <option value="TILESHFLT12-Old_World_2:_Emser_Fontane_4x4_Walnut_Shower_Floor_laid_in_a_Straight_Pattern">Old World 2</option>
-		  </select>
-		</div>
-		<div id="clear"></div>
-		<div id="subsection_title">
-          Grout
-        </div>
-        <div id="section_options">
-		  <select name="master_shower_tile_grout">
-	        <option value="">Select Option</option>
-		    <option value="Alabaster">Alabaster</option>
-	        <option value="Charcoal">Charcoal</option>
-			<option value="Grey">Grey</option>
-		    <option value="Ivory">Ivory</option>
-	        <option value="Pewter">Pewter</option>
-		    <option value="Silver">Silver</option>
-		    <option value="Warm_Grey">Warm Grey</option>
-		    <option value="White">White</option>
-	      </select>
-		</div>
-	  </div>
-	  <div id="master_shower_tile-classic" style="display: none;">
-		<div id="subsection_title">
-          Style/Color/Pattern
-        </div>
-        <div id="section_options">
-          <select name="master_shower_tile_pattern">
-	        <option value="">Select Option</option>
-		    <option value="TILESHFLT23-Artisan_1:_Ember_Meshmounted_Cream_Penny_Round_Shower_Floor">Artisan 1</option>
-		    <option value="TILESHFLT24-Artisan_2:_Emser_Meshmounted_White_Penny_Round_Shower_Floor">Artisan 2</option>
-		    <option value="TILESHFLT25-Heritage_1:_Emser_Meshmounted_Tan_Round_Venetian_Pebble_Shower_Floor">Heritage 1</option>
-		    <option value="TILESHFLT26-Heritage_2:_Emser_Meshmounted_Ivory_Round_Venetian_Pebble_Shower_Floor">Heritage 2</option>
-		    <option value="TILESHFLT21-Old World_1:_Emser_Meshmounted_Silver_Penny_Round_Shower_Floor">Old World 1</option>
-		    <option value="TILESHFLT22-Old World_2:_Emser_Meshmounted_Pewter_Penny_Round_Shower_Floor">Old World 2</option>
-		  </select>
-		</div>
-		<div id="clear"></div>
-		<div id="subsection_title">
-          Grout
-        </div>
-        <div id="section_options">
-		  <select name="master_shower_tile_grout">
-	        <option value="">Select Option</option>
-		    <option value="Alabaster">Alabaster</option>
-	        <option value="Charcoal">Charcoal</option>
-			<option value="Grey">Grey</option>
-		    <option value="Ivory">Ivory</option>
-	        <option value="Pewter">Pewter</option>
-		    <option value="Silver">Silver</option>
-		    <option value="Warm_Grey">Warm Grey</option>
-		    <option value="White">White</option>
-	      </select>
-		</div>
-	  </div>
-	  <div id="master_shower_tile-premier" style="display: none;">
-		<div id="subsection_title">
-          Style/Color/Pattern
-        </div>
-        <div id="section_options">
-          <select name="master_shower_tile_pattern">
-	        <option value="">Select Option</option>
-		    <option value="TILESHFLT31-Old_World_1:_Emser_Meshmounted_Tan_Flat_Venetian_Pebble_Shower_Floor">Old World 1</option>
-		    <option value="TILESHFLT32-Old_World_2:_Emser_Meshmounted_Ivory_Flat_Venetian_Pebble_Shower_Floor">Old World 2</option>
-		  </select>
-		</div>
-		<div id="clear"></div>
-		<div id="subsection_title">
-          Grout
-        </div>
-        <div id="section_options">
-		  <select name="master_shower_tile_grout">
-	        <option value="">Select Option</option>
-		    <option value="Alabaster">Alabaster</option>
-	        <option value="Charcoal">Charcoal</option>
-			<option value="Grey">Grey</option>
-		    <option value="Ivory">Ivory</option>
-	        <option value="Pewter">Pewter</option>
-		    <option value="Silver">Silver</option>
-		    <option value="Warm_Grey">Warm Grey</option>
-		    <option value="White">White</option>
-	      </select>
-		</div>
-	  </div>
-
-	  <div id="clear"></div>
-
-	  <div id="section_title">
-	    Wall Tile & Scheme
-	  </div>
-	  <div id="section_options">
-	    <select name="shower_wall_tile" onchange="show_master_bath_wall_tile_options(this.value);">
-		  <option value="">Select Option</option>
-		  <option value="Signature">Signature - Each - $0.00</option>
-		  <option value="Classic">Classic - Each - $0.00</option>
-		  <option value="Premier">Premier - Each - $490.00</option>
-		</select>
-	  </div>
-
-	  <div id="clear"></div>
-
-	  <div id="master_shower_wall_tile_signature" style="display: none;">
-		<div id="subsection_title">
-          Style/Color/Pattern
-        </div>
-        <div id="section_options">
-          <select name="master_shower_wall_tile_pattern">
-	        <option value="">Select Option</option>
-		    <option value="TILESHWAT13-Artisan_1:_Emser_Paseo_13x13_Cream_Shower_Walls_laid_in_a_Diagonal_Pattern">Artisan 1</option>
-		    <option value="TILESHWAT14-Artisan_2:_Emser_Country_6x24_Oxford_Shower_Walls_laid_in_Random_Pattern">Artisan 2</option>
-		    <option value="TILESHWAT15-Heritage_1:_Emser_St._Moritz_12x12_Olive_Shower_Walls_laid_in_a_Diagonal_Pattern">Heritage 1</option>
-		    <option value="TILESHWAT16-Heritage_2:_Emser_Toledo_13x13_Walnut_Shower_Walls_laid_in_a_Cinderblock_Pattern_with_an_Emser_4x12_Pacific_Decorative_Listello">Heritage 2</option>
-		    <option value="TILESHWAT11-Old_World_1:_Emser_Del_Sol_13x13_100_Shower_Walls_laid_in_a_Diagonal_Pattern">Old World 1</option>
-		    <option value="TILESHWAT12-Old_World_2:_Emser_Lucerne_13x13_Matterhorne_Shower_Walls_laid_in_a_Diagonal_Pattern">Old World 2</option>
-		  </select>
-		</div>
-		<div id="clear"></div>
-		<div id="subsection_title">
-          Grout
-        </div>
-        <div id="section_options">
-		  <select name="master_shower_wall_tile_grout">
-	        <option value="">Select Option</option>
-		    <option value="Alabaster">Alabaster</option>
-	        <option value="Charcoal">Charcoal</option>
-			<option value="Grey">Grey</option>
-		    <option value="Ivory">Ivory</option>
-	        <option value="Pewter">Pewter</option>
-		    <option value="Silver">Silver</option>
-		    <option value="Warm_Grey">Warm Grey</option>
-		    <option value="White">White</option>
-	      </select>
-		</div>
-	  </div>
-	  <div id="master_shower_wall_tile_classic" style="display: none;">
-		<div id="subsection_title">
-          Style/Color/Pattern
-        </div>
-        <div id="section_options">
-          <select name="master_shower_wall_tile_pattern">
-	        <option value="">Select Option</option>
-		    <option value="TILESHWAT23-Artisan_1:_Emser_St._Moritz_12x12_Silver_Shower_Walls_laid_in_a_Diagonal_Pattern">Artisan 1</option>
-		    <option value="TILESHWAT24-Artisan_2:_Emser_Cosmopolitan_13x13_Charcoal_Shower_Walls_laid_in_a_Diagonal_Pattern">Artisan 2</option>
-		    <option value="TILESHWAT25-Heritage_1:_Daltite_Rittenhouse_3x6_Linen_Shower_Walls_laid_in_a_Cinderblock_Pattern">Heritage 1</option>
-		    <option value="TILESHWAT26-Heritage_2:_Daltite_Rittenhouse_3x6_White_Shower_Walls_laid_in_a_Cinderblock_Pattern">Heritage 2</option>
-		    <option value="TILESHWAT21-Old World_1:_Emser_Lucerne_13x13_Matterhorne_Shower_Walls_laid_in_a_Diagonal_Pattern_with_an_Emser_1x1_Autumn_Lilac_Slate_Insert">Old World 1</option>
-		    <option value="TILESHWAT22-Old World_2:_Shaw_Del_Sol_13x13_100_Shower_Walls_laid_in_a_Diagonal_Pattern_with_an_Emser_5/8in.x5/8in._Lucente_Campo_Insert">Old World 2</option>
-		  </select>
-		</div>
-		<div id="clear"></div>
-		<div id="subsection_title">
-          Grout
-        </div>
-        <div id="section_options">
-		  <select name="master_shower_wall_tile_grout">
-	        <option value="">Select Option</option>
-		    <option value="Alabaster">Alabaster</option>
-	        <option value="Charcoal">Charcoal</option>
-			<option value="Grey">Grey</option>
-		    <option value="Ivory">Ivory</option>
-	        <option value="Pewter">Pewter</option>
-		    <option value="Silver">Silver</option>
-		    <option value="Warm_Grey">Warm Grey</option>
-		    <option value="White">White</option>
-	      </select>
-		</div>
-	  </div>
-	  <div id="master_shower_wall_tile_premier" style="display: none;">
-		<div id="subsection_title">
-          Style/Color/Pattern
-        </div>
-        <div id="section_options">
-          <select name="master_shower_wall_tile_pattern">
-	        <option value="">Select Option</option>
-			<option value="TILESHWAT32-Artisan_1:_Emser_Motion_12x12_Drift_Shower_Walls_laid_in_a_Diagonal_Pattern">Artisan 1</option>
-		    <option value="TILESHFLT33-Heritage_1:_Emser_Palladino_12x12_Albanna_Shower_Walls_laid_in_a_Diagonal_Pattern">Heritage 1</option>
-		    <option value="TILESHFLT31-Old_World_1:_Emser_Spectrum_13x13_Acamar_Shower_Walls_laid_in_a_Diagonal_Pattern">Old World 1</option>
-		  </select>
-		</div>
-		<div id="clear"></div>
-		<div id="subsection_title">
-          Grout
-        </div>
-        <div id="section_options">
-		  <select name="master_shower_wall_tile_grout">
-	        <option value="">Select Option</option>
-		    <option value="Alabaster">Alabaster</option>
-	        <option value="Charcoal">Charcoal</option>
-			<option value="Grey">Grey</option>
-		    <option value="Ivory">Ivory</option>
-	        <option value="Pewter">Pewter</option>
-		    <option value="Silver">Silver</option>
-		    <option value="Warm_Grey">Warm Grey</option>
-		    <option value="White">White</option>
-	      </select>
-		</div>
-	  </div>
-
-	  <div id="clear"></div>
-
-	</div>
-
-	<h1>Powder Room Options</h1>
-	<div id="panel">
-
-	  <div id="section_title">
-	    Vanity-Pedestal
-	  </div>
-	  <div id="section_options">
-	    <select name="powder-pedestal">
-		  <option value="">Select Option</option>
-		  <option value="PLMEMPKG-Kohler_Pedestal_&_Commode_Package">Kohler Pedestal & Commode Package - Each - $450.00</option>
-		</select>
-	  </div>
-
-	  <div id="clear"></div>
-
-	  <div id="section_title">
-	    Hardware
-	  </div>
-	  <div id="section_options">
-	    <select name="powder-pedestal">
-		  <option value="">Select Option</option>
-		  <option value="KOHDEVCPPD-Kohler_Devonshire_Chrome_with_Midtowne_Chrome_Bath_Hardware">Kohler_Devonshire Chrome with Midtowne Chrome Bath Hardware - Each - $0.00</option>
-		  <option value="KOHDEVBNPD-Kohler_Devonshire_Brushed_Nickel_with_Midtowne_Satin_Nickel_Bath_Hardware">Kohler_Devonshire Brushed Nickel with Midtowne Satin Nickel Bath Hardware - Each - $110.00</option>
-		  <option value="KOHDEVBZPD-Kohler_Devonshire_Oil_Rubbed_Bronze_with_Midtowne_Bronze_Bath_Hardware">Kohler_Devonshire Oil Rubbed Bronze with Midtowne Bronze Bath Hardware - Each - $130.00</option>
-		  <option value="KOHALTCPPD-Kohler_Alteo_Chrome_with_Midtowne_Chrome_Bath_Hardware">Kohler Alteo Chrome with Midtowne Chrome Bath Hardware - Each - $0.00</option>
-		  <option value="KOHALTBNPD-Kohler_Alteo_Brushed_Nickel_with_Midtowne_Satin_Nickel_Bath_Hardware">Kohler Alteo Brushed Nickel with Midtowne Satin Nickel Bath Hardware - Each - $80.00</option>
-		  <option value="KOHALTBZPD-Kohler_Alteo_Oil_Rubbed_Bronze_with_Midtowne_Chrome_Bath_Hardware">Kohler Alteo Chrome with Midtowne Chrome Bath Hardware - Each - $130.00</option>
-		  <option value="KOHMARCPPD-Kohler_Margaux_Chrome_with_Midtowne_Chrome_Bath_Hardware">Kohler Margaux Chrome with Midtowne Chrome Bath Hardware - Each - $510.00</option>
-		  <option value="KOHMARBNPD-Kohler_Margaux_Brushed_Nickel_with_Midtowne_Satin_Nickel_Bath_Hardware">Kohler Margaux Brushed Nickel with Midtowne Satin Nickel Bath Hardware - Each - $850.00</option>
-		</select>
-	  </div>
-
-	  <div id="clear"></div>
-
-	  <div id="section_title">
-	    Mirror
-	  </div>
-	  <div id="section_options">
-	    <select name="powder_mirror" onchange="show_powder_mirror_options(this.value);">
-		  <option value="">Select Option</option>
-		  <option value="MIRPDTILT-Tilt">Tilt - Each - $0.00</option>
-		  <option value="MIRPDDEC-Decorative_Framed">Decorative_Framed - Each - $0.00</option>
-		  <option value="MIRPDDEC2-Decorative_Framed_2">Decorative Framed 2 - Each - $150.00</option>
-		</select>
-	  </div>
-
-	  <div id="clear"></div>
-
-	  <div id="powder-mirror-tilt" style="display: none;">
-		<div id="subsection_title">
-          Finish
-        </div>
-        <div id="section_options">
-          <select name="powder-mirror-finish">
-	        <option value="">Select Option</option>
-	        <option value="Chrome_Plate_Brackets">Chrome Plate Brackets</option>
-	        <option value="Oil_Rubbed_Bronze_Plate_Brackets">Oil Rubbed Bronze Plate Brackets</option>
-			<option value="Stainless_Steel_Plate_Brackets">Stainless Steel Plate Brackets</option>
-		  </select>
-		</div>
-		<div id="clear"></div>
-		<div id="subsection_title">
-          Shape
-        </div>
-        <div id="section_options">
-          <select name="powder-mirror-shape">
-	        <option value="">Select Option</option>
-	        <option value="Oval">Oval</option>
-	        <option value="Rectangular">Rectangular</option>
-		  </select>
-		</div>
-	  </div>
-	  <div id="powder-mirror-dec" style="display: none;">
-	    <div id="subsection_title">
-           Finish
-        </div>
-        <div id="section_options">
-		  <select name="powder-mirror-finish">
-	        <option value="">Select Option</option>
-	        <option value="Brown_Ribbed">Brown Ribbed</option>
-	        <option value="Cream_Sloped_with_Bronze_Lip">Cream Sloped with Bronze Lip</option>
-		    <option value="Painted_1x4_Frame_(color_to_match_trim_in_room)">Painted 1x4 Frame (color to match trim in room)</option>
-	        <option value="Silver_Sloped">Silver Sloped</option>
-		    <option value="Silver_with_Detailed_Lip">Silver with Detailed Lip</option>
-		  </select>
-	    </div>
-	  </div>
-	  <div id="powder-mirror-dec2" style="display: none;">
-		<div id="subsection_title">
-          Finish
-        </div>
-        <div id="section_options">
-          <select name="powder-mirror-finish">
-	        <option value="">Select Option</option>
-	        <option value="Brown_Sloped_with_Bronze_Finish">Brown Sloped with Bronze Finish</option>
-		  </select>
-		</div>
-	  </div>
-
-	  <div id="clear"></div>
-
-	</div>
-
-
-	  <h1>Secondary Bath Options</h1>
-	  <div></div>
-
-
-	  <h1>Laundry Options</h1>
-	  <div id="panel">
-	    <div id="section_title">
-          Cabinetry
-	    </div>
-	    <div id="section_options">
-          <select id="dropdown" name="laundry_cabinets" onchange="show_laundry_cabinet_options(this.value);">
-	        <option value="">Select Option</option>
-	        <option value="CABBENPNTLA-Benton_Painted">Benton Painted - Each - $0.00</option>
-			<option value="CABBENSTNLA-Benton_Stained">Benton Stained - Each - $0.00</option>
-			<option value="CABLANPNTLA-Landen_Painted">Landen Painted - Each - $0.00</option>
-			<option value="CABLANSTNLA-Landen_Stained">Landen Stained - Each - $0.00</option>
-			<option value="CABSAYSTNLA-Saybrooke_Stained">Saybrooke Stained - Each - $0.00</option>
-          </select>
-		</div>
-		<div id="clear"></div>
-
-	    <div id="laundry-cabinets-painted" style="display: none;">
-		  <div id="subsection_title">
-            Color
-          </div>
-          <div id="section_options">
-            <select name="laundry_cabinets_cabinets_color">
-	          <option value="">Select Option</option>
-	          <option value="Antique">Antique</option>
-	          <option value="White">White</option>
-		    </select>
-		  </div>
-	    </div>
-	    <div id="laundry-cabinets-stained" style="display: none;">
-		  <div id="subsection_title">
-            Color
-          </div>
-          <div id="section_options">
-		    <select name="laundry_cabinets_color">
-	          <option value="">Select Option</option>
-	          <option value="Cafe">Cafe</option>
-	          <option value="Saddle">Saddle</option>
-		      <option value="Sarsparilla">Sarsparilla</option>
-	          <option value="Umber">Umber</option>
-		    </select>
-	      </div>
-	    </div>
-	    <div id="laundry-cabinets-saybrooke" style="display: none;">
-		  <div id="subsection_title">
-            Color
-          </div>
-          <div id="section_options">
-            <select name="laundry_cabinets_color">
-	          <option value="">Select Option</option>
-	          <option value="Autumn">Autumn</option>
-	          <option value="Cafe">Cafe</option>
-		      <option value="Rouge">Rouge</option>
-	          <option value="Saddle">Saddle</option>
-		      <option value="Sarsparilla">Sarsparilla</option>
-	          <option value="Umber">Umber</option>
-		    </select>
-		  </div>
-	    </div>
-
-		<div id="clear"></div>
-
-		<div id="section_title">
-          Countertops
-	    </div>
-	    <div id="section_options">
-          <select id="dropdown" name="laundry_countertops" onchange="show_laundry_countertop_options(this.value);">
-	        <option value="">Select Option</option>
-	        <option value="TOPSLAUT1-Signature">Signature - Each - $0.00</option>
-			<option value="TOPSLAUT2-Classic">Classic - Each - $0.00</option>
-          </select>
-		</div>
-		<div id="clear"></div>
-
-		<div id="laundry_countertop_signature" style="display: none;">
-		  <div id="subsection_title">
-            Material/Color/Finish
-          </div>
-          <div id="section_options">
-            <select name="laundry_countertop_color">
-		      <option value="">Select Option</option>
-	          <option value="Granite_Blanco_Perla_Polished">Granite Blanco Perla Polished</option>
-	          <option value="Granite_New_Venetian_Gold_Polished">Granite New Venetian Gold Polished</option>
-		      <option value="Granite_Raven_Black_Polished">Granite Raven Black Polished</option>
-	          <option value="Granite_Steel_Gray_Polished">Granite Steel Gray Polished</option>
-		      <option value="Granite_Tropic_Brown_Polished">Granite Tropic Brown Polished</option>
-		      <option value="Granite_Uba_Tuba_Polished">Granite Uba Tuba Polished</option>
-		    </select>
-		  </div>
-		  <div id="clear"></div>
-		  <div id="subsection_title">
-            Edge
-          </div>
-          <div id="section_options">
-		    <select name="laundry_countertop_edge">
-	          <option value="">Select Option</option>
-		      <option value="1/2_Bullnose">1/2 Bullnose</option>
-	          <option value="1/4_Bevel">1/4 Bevel</option>
-		      <option value="Flat">Flat</option>
-	        </select>
-		  </div>
-	    </div>
-		<div id="laundry_countertop_classic" style="display: none;">
-		  <div id="subsection_title">
-            Material/Color/Finish
-          </div>
-          <div id="section_options">
-            <select name="laundry_countertop_color">
-	          <option value="">Select Option</option>
-		      <option value="Granite_Andino_White_Polished">Granite Andino White Polished</option>
-	          <option value="Granite_Nero_Onion_Leathered">Granite Nero Onion Polished</option>
-		      <option value="Granite_Raven_Black_Honed">Granite Raven Black Honed</option>
-	          <option value="Granite_River_White_Honed">Granite River White Honed</option>
-		      <option value="Granite_River_White_Polished">Granite River White Polished</option>
-		    </select>
-		  </div>
-		  <div id="clear"></div>
-		  <div id="subsection_title">
-            Edge
-          </div>
-          <div id="section_options">
-		    <select name="laundry_countertop_edge">
-	          <option value="">Select Option</option>
-		      <option value="1/2_Bullnose">1/2 Bullnose</option>
-	          <option value="1/4_Bevel">1/4 Bevel</option>
-		      <option value="Flat">Flat</option>
-	        </select>
-		  </div>
-		</div>
-
-		<div id="clear"></div>
-
-	  </div>
-
-	<h1>Flooring Options</h1>
-	<div id="panel">
-       <div id="section_title">
-         Hardwood
-	   </div>
-	   <div id="section_options">
-         <select id="dropdown" name="hardwoods" onchange="show_hardwood_options(this.value);">
-	       <option value="">Select Option</option>
-	       <option value="HWHEN-Mohawk_Henley">Mohawk Henley - SqFt - $0.00</option>
-		   <option value="HWNOT-Shaw_Nottoway">Shaw Nottoway - SqFt - $0.00</option>
-		   <option value="HWHENILOCPT-Mohawk_Henley_in_Lieu_of_Carpet">Mohawk Henley in Lieu of Carpet - SqFt - $6.00</option>
-		   <option value="HWNOTILOCPT-Shaw_Nottoway_in_Lieu_of_Carpet">Shaw Nottoway in Lieu of Carpet - SqFt - $7.00</option>
-         </select>
-	   </div>
-
-	   <div id="clear"></div>
-
-	   <div id="hardwoods-HWHEN" style="display: none;">
-		<div id="subsection_title">
-          Style/Color
-        </div>
-        <div id="section_options">
-          <input type="checkbox" name="hardwoods-HWHEN[]" value="Mohawk Henley Hickory Amber" />Mohawk Henley Hickory Amber<br />
-		  <input type="checkbox" name="hardwoods-HWHEN[]" value="Mohawk Henley Hickory Charcoal" />Mohawk Henley Hickory Charcoal<br />
-		  <input type="checkbox" name="hardwoods-HWHEN[]" value="Mohawk Henley Hickory Chocolate" />Mohawk Henley Hickory Chocolate<br />
-		  <input type="checkbox" name="hardwoods-HWHEN[]" value="Mohawk Henley Hickory Mocha" />Mohawk Henley Hickory Mocha<br />
-		  <input type="checkbox" name="hardwoods-HWHEN[]" value="Mohawk Henley Hickory Shadow" />Mohawk Henley Hickory Shadow<br />
-		  <input type="checkbox" name="hardwoods-HWHEN[]" value="Mohawk Henley Hickory Teak" />Mohawk Henley Hickory Teak<br />
-		</div>
-		<div id="clear"></div>
-		<div id="subsection_title">
-          Rooms:
-        </div>
-        <div id="section_options">
-		  <textarea></textarea>
-		</div>
-		<div id="clear"></div>
-		<div id="subsection_title">
-          Quantity (SqFt)
-        </div>
-        <div id="section_options">
-		  <input type="textbox" size="30" name="hardwoods-HWHEN-Qty" />
-		</div>
-	  </div>
-	  <div id="hardwoods-HWNOT" style="display: none;">
-		<div id="subsection_title">
-          Style/Color
-        </div>
-        <div id="section_options">
-          <input type="checkbox" name="hardwoods-HWNOT[]" value="Shaw Nottoway Burnt Barnboard" />Shaw Nottoway Burnt Barnboard<br />
-		  <input type="checkbox" name="hardwoods-HWNOT[]" value="Shaw Nottoway Old English" />Shaw Nottoway Old English<br />
-		  <input type="checkbox" name="hardwoods-HWNOT[]" value="Shaw Nottoway Praire Dust" />Shaw Nottoway Praire Dust<br />
-		  <input type="checkbox" name="hardwoods-HWNOT[]" value="Shaw Nottoway Stonehenge" />Shaw Nottoway Stonehenge<br />
-		  <input type="checkbox" name="hardwoods-HWNOT[]" value="Shaw Nottoway Warm Sunset" />Shaw Nottoway Warm Sunset<br />
-		  <input type="checkbox" name="hardwoods-HWNOT[]" value="Shaw Nottoway Weathered Saddle" />Shaw Nottoway Weathered Saddle<br />
-		</div>
-		<div id="clear"></div>
-		<div id="subsection_title">
-          Rooms:
-        </div>
-		<div id="section_options">
-		  <textarea></textarea>
-		</div>
-		<div id="clear"></div>
-		<div id="subsection_title">
-          Quantity (SqFt)
-        </div>
-        <div id="section_options">
-		  <input type="textbox" size="30" name="hardwoods-HWNOT-Qty" />
-		</div>
-	  </div>
-	  <div id="hardwoods-HWHENILOCPT" style="display: none;">
-		<div id="subsection_title">
-          Style/Color
-        </div>
-        <div id="section_options">
-          <input type="checkbox" name="hardwoods-HWHENILOCPT[]" value="Mohawk Henley Hickory Amber" />Mohawk Henley Hickory Amber<br />
-		  <input type="checkbox" name="hardwoods-HWHENILOCPT[]" value="Mohawk Henley Hickory Charcoal" />Mohawk Henley Hickory Charcoal<br />
-		  <input type="checkbox" name="hardwoods-HWHENILOCPT[]" value="Mohawk Henley Hickory Chocolate" />Mohawk Henley Hickory Chocolate<br />
-		  <input type="checkbox" name="hardwoods-HWHENILOCPT[]" value="Mohawk Henley Hickory Mocha" />Mohawk Henley Hickory Mocha<br />
-		  <input type="checkbox" name="hardwoods-HWHENILOCPT[]" value="Mohawk Henley Hickory Shadow" />Mohawk Henley Hickory Shadow<br />
-		  <input type="checkbox" name="hardwoods-HWHENILOCPT[]" value="Mohawk Henley Hickory Teak" />Mohawk Henley Hickory Teak<br />
-		</div>
-		<div id="clear"></div>
-		<div id="subsection_title">
-          Rooms:
-        </div>
-        <div id="section_options">
-		  <textarea></textarea>
-		</div>
-		<div id="clear"></div>
-		<div id="subsection_title">
-          Quantity (SqFt)
-        </div>
-        <div id="section_options">
-		  <input type="textbox" size="30" name="hardwoods-HWHENILOCPT-Qty" />
-		</div>
-	  </div>
-	  <div id="hardwoods-HWNOTILOCPT" style="display: none;">
-		<div id="subsection_title">
-          Style/Color
-        </div>
-        <div id="section_options">
-          <input type="checkbox" name="hardwoods-HWNOTILOCPT[]" value="Shaw Nottoway Burnt Barnboard" />Shaw Nottoway Burnt Barnboard<br />
-		  <input type="checkbox" name="hardwoods-HWNOTILOCPT[]" value="Shaw Nottoway Old English" />Shaw Nottoway Old English<br />
-		  <input type="checkbox" name="hardwoods-HWNOTILOCPT[]" value="Shaw Nottoway Praire Dust" />Shaw Nottoway Praire Dust<br />
-		  <input type="checkbox" name="hardwoods-HWNOTILOCPT[]" value="Shaw Nottoway Stonehenge" />Shaw Nottoway Stonehenge<br />
-		  <input type="checkbox" name="hardwoods-HWNOTILOCPT[]" value="Shaw Nottoway Warm Sunset" />Shaw Nottoway Warm Sunset<br />
-		  <input type="checkbox" name="hardwoods-HWNOTILOCPT[]" value="Shaw Nottoway Weathered Saddle" />Shaw Nottoway Weathered Saddle<br />
-		</div>
-		<div id="clear"></div>
-		<div id="subsection_title">
-          Rooms:
-        </div>
-		<div id="section_options">
-		  <textarea></textarea>
-		</div>
-		<div id="clear"></div>
-		<div id="subsection_title">
-          Quantity (SqFt)
-        </div>
-        <div id="section_options">
-		  <input type="textbox" size="30" name="hardwoods-HWNOTILOCPT-Qty" />
-		</div>
-	  </div>
-
-	  <div id="clear"></div>
-
-	</div>
-
-
-	<h1>Interior Trim and Details</h1>
-	  <div></div>
-
-	  <h1>Paint Options</h1>
-	  <div>
-	    <img src="images/paint_plan.jpg" width="400" />
-	  </div>
-
-	  <h1>Lighting Options</h1>
-	  <div></div>
-	  <h1>Electrical and Wiring Options</h1>
-	  <div id="panel">
-	    <div id="section_title">
-          Outlet & Switch Plate throughout Home
-        </div>
-        <div id="section_options">
-		  <select name="outlet_plates">
-	        <option value="">Select Option</option>
-		    <option value="PLATEALL-Black">Black - Each - $0.00</option>
-		    <option value="PLATEALL-Brown">Brown - Each - $0.00</option>
-		    <option value="PLATEALL-Light_Almond">Light Almond - Each - $0.00</option>
-		    <option value="PLATEALL-White">White - Each - $0.00</option>
-		  </select>
-		  <input type="hidden" name="outlet_plates_uom" value="Each" />
-		  <input type="hidden" name="outlet_plates_description" value="Outlet & Switch Plate throughout Home" />
-        </div>
-
-	    <div id="clear"></div>
-
-        <div id="section_title">
-          Outlet Plate on the Kitchen Island
-        </div>
-        <div id="section_options">
-		  <select name="island_plates">
-	        <option value="">Select Option</option>
-		    <option value="PLATEISLAND-Black">Black - Each - $0.00</option>
-		    <option value="PLATEISLAND-Brown">Brown - Each - $0.00</option>
-		    <option value="PLATEISLAND-Light_Almond">Light Almond - Each - $0.00</option>
-		    <option value="PLATEISLAND-White">White - Each - $0.00</option>
-		  </select>
-		  <input type="hidden" name="island_plates_uom" value="Each" />
-		  <input type="hidden" name="island_plates_description" value="Outlet Plate on the Kitchen Island" />
-		</div>
-
-	    <div id="clear"></div>
-
-        <div id="section_title">
-          Outlet Plates on the Backsplash
-        </div>
-        <div id="section_options">
-		  <select name="backsplash_plates">
-	        <option value="">Select Option</option>
-		    <option value="PLATESPLASH-Black">Black - Each - $0.00</option>
-		    <option value="PLATESPLASH-Brown">Brown - Each - $0.00</option>
-		    <option value="PLATESPLASH-Light_Almond">Light Almond - Each - $0.00</option>
-		    <option value="PLATESPLASH-White">White - Each - $0.00</option>
-		  </select>
-		  <input type="hidden" name="backsplash_plates_uom" value="Each" />
-		  <input type="hidden" name="backsplash_plates_description" value="Outlet Plates on the Backsplash" />
-
-		</div>
-	  </div>
-
-      <h1>Miscellaneous Options</h1>
-      <div id="panel">
-        <div id="section_title">
-          2.5" Plantation-Style Blinds
-	    </div>
-	    <div id="section_options">
-          <select id="dropdown" name="blinds25" onchange="CheckContact(this.value,'blinds25_rooms');">
-	        <option value="">Select Option</option>
-	        <option value="2BLINDS-Painted_Off_White">Painted Off White - Each - $95.00</option>
-			<option value="2BLINDS-Painted_White">Painted White - Each - $95.00</option>
-          </select>
-		  <select id="qty" name="blinds25_qty">
-		    <option value="0">0</option>
-			<option value="1">1</option>
-			<option value="2">2</option>
-			<option value="3">3</option>
-			<option value="4">4</option>
-		  </select>
-		  <input type="hidden" name="blinds25_price" value="95.00">
-		  <input type="hidden" name="blinds25_description" value="2.5in. Plantation-Style Blinds">
-		  <input type="hidden" name="blinds25_uom" value="Each">
-		  <div id="blinds25_rooms" style="display: none;">Room(s): <input type="text" name="blinds25_rooms" /></div>
-	    </div>
-
-
-		<div id="section_title">
-          3.5" Plantation Shutters
-	    </div>
-	    <div id="section_options">
-          <select id="dropdown" name="shutters" onchange="CheckContact(this.value,'shutters_rooms');">
-	        <option value="">Select Option</option>
-	        <option value="SHUTTERS-Stained_Black_Walnut">Stained Black Walnut - Each - $350.00</option>
-			<option value="SHUTTERS-Stained_Cherry">Stained Cherry - Each - $350.00</option>
-			<option value="SHUTTERS-Stained_Old_Teak">Stained Old Teak - Each - $350.00</option>
-          </select>
-		  <select id="qty" name="shutters_qty">
-		    <option value="0">0</option>
-			<option value="1">1</option>
-			<option value="2">2</option>
-			<option value="3">3</option>
-			<option value="4">4</option>
-		  </select>
-		  <input type="hidden" name="shutters_price" value="350.00">
-		  <input type="hidden" name="shutters_description" value="3.5in. Plantation Shutters">
-		  <input type="hidden" name="shutters_uom" value="Each">
-		  <div id="shutters_rooms" style="display: none;">Room(s): <input type="text" name="shutters_rooms" /><br /></div>
-	    </div>
-	  </div>
-	  <div id="clear"></div>
-
-
-</div>
-
-	  <hr />
+      <hr />
       <div id="input_area">
 
-	    <p>Enter yours and the homebuyer's email addresses to send a copy of the selections chosen today.</p>
+        <p>Enter yours and the homebuyer's email addresses to send a copy of the selections chosen today.</p>
 
-	    <div id="label">Homebuyer Email:</div>
-	    <div id="text_input">
-	      <input type="text" size="30" name="homebuyer_email">
-	    </div>
+        <div id="label">Homebuyer Email:</div>
+        <div id="text_input">
+          <input type="text" size="30" name="homebuyer_email">
+        </div>
 
-	    <div id="clear"></div>
+        <div id="clear"></div>
 
-	    <div id="label">Designer Email:</div>
-	    <div id="text_input">
+        <div id="label">Designer Email:</div>
+        <div id="text_input">
           <input type="text" size="30" name="designer_email" value="lharris@e-signaturehomes.com">
-	    </div>
+        </div>
 
-	    <div id="clear"></div>
+        <div id="clear"></div>
 
-	    <div id="submit_button">
+        <div id="submit_button">
           <input type="submit" value="Send">
-	    </div>
-	  </div>
+        </div>
+      </div>
     </form>
 
     <!-- End Selection Guide -->
@@ -2100,5 +816,5 @@
 
   </div> <!-- wrapper -->
 
-  </body>
+</body>
 </html>

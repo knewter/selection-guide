@@ -17,7 +17,7 @@ h1 {
   font-size: 36px;
   margin-left:10px;
 }
-input[type=text] {padding:5px; border:2px solid #ccc; 
+input[type=text] {padding:5px; border:2px solid #ccc;
 -webkit-border-radius: 5px;
 border-radius: 5px;
 }
@@ -34,7 +34,7 @@ select {
   -moz-border-radius: 5px;
   border-radius: 5px;
 }
-#clear {
+#clear, .clear {
   clear: both;
 }
 #header {
@@ -54,19 +54,19 @@ select {
   margin-left: 30px;
   height: auto;
 }
-#section_title {
+#section_title, .section_title {
   margin-left: 30;
   font-size: 18px;
   float: left;
   width: 300px;
 }
-#subsection_title {
+#subsection_title, .subsection_title {
   margin-left: 30px;
   margin-bottom: 20px;
   float: left;
   width: 270px;
 }
-#section_options {
+#section_options, .section_options {
   float: left;
 }
 #dropdown {
